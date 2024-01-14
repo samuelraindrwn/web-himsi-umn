@@ -1,3 +1,7 @@
 export default function App() {
-  return <h1>WEB HIMSI</h1>;
+  return (
+    <>
+      <section className="hero">HERO</section>
+    </>
+  );
 }

@@ -1,7 +1,9 @@
-export default function App() {
+import Hero from "@/components/hero";
+
+export default function Home() {
   return (
     <>
-      <section className="hero">HERO</section>
+      <Hero />
     </>
   );
 }

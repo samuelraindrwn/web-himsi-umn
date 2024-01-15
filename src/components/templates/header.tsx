@@ -5,7 +5,10 @@ export default function NavigationHeader() {
     <header className="nav">
       <div className="logo-wrapper">
         <Logo />
-        <h1>HIMSI</h1>
+        <h1>
+          Himpunan Mahasiswa <span>Sistem Informasi</span> <br />
+          Universitas <span>Multimedia Nusantara</span>
+        </h1>
       </div>
       <Navigation />
     </header>

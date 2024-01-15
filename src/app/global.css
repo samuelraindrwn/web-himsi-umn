@@ -71,6 +71,7 @@ nav a {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  border: 1px solid red;
 }
 
 .logo-wrapper {
@@ -82,8 +83,16 @@ nav a {
 
 .logo-wrapper h1 {
   color: var(--white);
-  font-size: 1.5rem;
+  font-size: 1rem;
   letter-spacing: 3px;
+}
+
+.logo-wrapper h1 span:first-child {
+  color: var(--orange-himsi);
+}
+
+.logo-wrapper h1 span:last-child {
+  color: #3865bf;
 }
 
 .hero {

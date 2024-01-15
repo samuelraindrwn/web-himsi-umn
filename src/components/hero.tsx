@@ -9,7 +9,7 @@ export default function Hero() {
               <span> GEN</span> XIV
             </h1>
             <p>
-              In the long book of life, every family has its own story. <br />{" "}
+              In the long book of life, every family has its own story. <br />
               This story is made up of shared memories, laughter, and even
               challenges. <br /> As we journey through life, piece by piece, our
               family narrative unfolds and reveals itself

@@ -1,3 +1,5 @@
+import Wave from "./wave";
+
 export default function Hero() {
   return (
     <>
@@ -17,6 +19,7 @@ export default function Hero() {
             <button>Explore Our Journey</button>
           </div>
         </div>
+        <Wave />
       </section>
       <main></main>
     </>

@@ -22,13 +22,11 @@ const ParalaxWave: React.FC = () => {
       });
     });
 
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener("scroll", () => {});
     };
   }, []);
 
-  // Helper function to get initial background position based on the index
   const getInitialBackgroundPositionX = (index: number): number => {
     switch (index) {
       case 0:

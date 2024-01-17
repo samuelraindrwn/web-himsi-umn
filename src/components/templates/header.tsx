@@ -48,9 +48,13 @@ export default function NavigationHeader() {
     <header id="nav-header" className={isActive ? "nav active" : "nav"}>
       <div onClick={handleOnClickReload} className="logo-wrapper">
         <Logo />
-        <h1>
-          Himpunan Mahasiswa <span>Sistem Informasi</span> <br />
-          Universitas <span>Multimedia Nusantara</span>
+        <h1 id="logo-full-text">
+          Himpunan Mahasiswa&nbsp;<span>Sistem Informasi</span> <br />
+          Universitas&nbsp;<span>Multimedia Nusantara</span>
+        </h1>
+        <h1 id="logo-crop-text">
+          <span>HIMSI</span>
+          <span>&nbsp;UMN</span>
         </h1>
       </div>
       <Navigation />

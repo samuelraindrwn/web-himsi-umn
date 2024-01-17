@@ -8,7 +8,7 @@ export default function Hero() {
           <div className="text-wrapper">
             <h1>
               <span>HIMSI</span>
-              <span> GEN</span> XIV
+              <span>&nbsp;GEN</span> XIV
             </h1>
             <p>
               In the long book of life, every family has its own story. <br />

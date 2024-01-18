@@ -388,9 +388,9 @@ header.nav.active .burgerBtn-icon {
     right: 0;
     gap: 0px;
     align-items: center;
-    width: 100%;
     display: none;
     backdrop-filter: blur(5px);
+    width: 100%;
   }
 
   header.nav.active nav a {

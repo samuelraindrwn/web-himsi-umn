@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Logo from "@/components/templates/logo";
+import Logo from "@/components/(assets)/logo";
 import { usePathname } from "next/navigation";
 import Navigation from "../navigation";
 

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import BurgerBtn from "./templates/burgerBtn";
-import XSymbol from "./templates/x-symbol";
+import BurgerBtn from "./(assets)/burgerBtn";
+import XSymbol from "./(assets)/x-symbol";
 import { useState } from "react";
 
 export default function Navigation({

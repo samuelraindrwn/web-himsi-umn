@@ -21,7 +21,6 @@ export default function Hero() {
         </div>
         <Wave />
       </section>
-      <main></main>
     </>
   );
 }

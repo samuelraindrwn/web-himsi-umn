@@ -161,7 +161,9 @@ header.nav.active nav a:hover {
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow: hidden;
   /* ! Kode di bawah ini ga bs work di ios */
+  /* ! This code won't work, since iOS uses the hight of the document and not the viewport:  */
   /* background-image: var(--hero-bg-image);
   background-size: cover;
   background-attachment: fixed;
@@ -275,6 +277,8 @@ header.nav.active nav a:hover {
 
 main {
   height: 1000vh;
+  background-color: white;
+  padding: 50px;
 }
 
 .wave {

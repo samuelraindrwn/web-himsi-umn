@@ -161,12 +161,14 @@ header.nav.active nav a:hover {
   align-items: center;
   justify-content: center;
   position: relative;
+  /* ! Kode di bawah ini ga bs work di ios */
   /* background-image: var(--hero-bg-image);
   background-size: cover;
   background-attachment: fixed;
   background-position: center; */
 }
 
+/* ! Agar di ios bisa work harus gunakan kode di bwh ini */
 .hero:after {
   content: "";
   position: fixed;
@@ -175,7 +177,7 @@ header.nav.active nav a:hover {
   left: 0;
   right: 0;
   z-index: -1;
-  background: var(--hero-bg-image);
+  background: var(--hero-bg-image) center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

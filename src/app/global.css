@@ -31,7 +31,18 @@
   --black: #000000;
   --blue-himsi: #264685;
   --orange-himsi: #f15c2d;
-  --i: -1;
+  --nav-more-option-clr: #264685dc;
+  --nav-more-option-hover-clr: #2f59acdc;
+  --blue-himsi-bit-lighter: #3865bf;
+  --hero-bg-color: #000000a0;
+  --border-bottom-nav-clr: #537fd7;
+
+  --hero-bg-image: url("/img/hero.webp");
+
+  --nav-header-animation: nav 1.25s ease-in-out forwards;
+  --logo-header-animation: logo 1.25s ease-in-out forwards;
+  --heroBody-text-animation: heroBody 1s ease-in-out forwards;
+  --wave-animation: wave 4s ease-in-out infinite;
 }
 
 header {
@@ -66,8 +77,8 @@ header.nav.active {
   display: flex;
   gap: 20px;
   color: inherit;
-  animation: nav 1.25s ease-in-out forwards;
-  -webkit-animation: nav 1.25s ease-in-out forwards;
+  animation: var(--nav-header-animation);
+  -webkit-animation: var(--nav-header-animation);
   transform: translateX(600px);
   -webkit-transform: translateX(600px);
   -moz-transform: translateX(600px);
@@ -118,8 +129,8 @@ header.nav.active nav a:hover {
   -moz-transform: translateX(-800px);
   -ms-transform: translateX(-800px);
   -o-transform: translateX(-800px);
-  animation: logo 1.25s ease-in-out forwards;
-  -webkit-animation: logo 1.25s ease-in-out forwards;
+  animation: var(--logo-header-animation);
+  -webkit-animation: var(--logo-header-animation);
 }
 
 .logo-wrapper h1 {
@@ -134,7 +145,7 @@ header.nav.active nav a:hover {
 }
 
 .logo-wrapper h1 span:last-child {
-  color: #3865bf;
+  color: var(--blue-himsi-bit-lighter);
 }
 
 .hero {
@@ -144,7 +155,7 @@ header.nav.active nav a:hover {
   align-items: center;
   justify-content: center;
   position: relative;
-  background-image: url("/img/hero.webp");
+  background-image: var(--hero-bg-image);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -160,14 +171,12 @@ header.nav.active nav a:hover {
   justify-content: center;
   text-align: center;
   backdrop-filter: blur(1px);
-  background-color: #000000a0;
+  background-color: var(--hero-bg-color);
   position: relative;
-  animation: heroBody2 2s ease-in-out forwards;
-  -webkit-animation: heroBody2 2s ease-in-out forwards;
 }
 
 .hero-body h1 span:first-child {
-  color: #3865bf;
+  color: var(--blue-himsi-bit-lighter);
 }
 
 .hero-body h1 span:nth-child(2) {
@@ -178,8 +187,8 @@ header.nav.active nav a:hover {
   opacity: 0;
   font-size: 5rem;
   color: var(--white);
-  animation: heroBody 1s ease-in-out forwards;
-  -webkit-animation: heroBody 1s ease-in-out forwards;
+  animation: var(--heroBody-text-animation);
+  -webkit-animation: var(--heroBody-text-animation);
   animation-delay: 0.35s;
   user-select: none;
 }
@@ -189,16 +198,16 @@ header.nav.active nav a:hover {
   font-size: 1.3rem;
   letter-spacing: 2px;
   color: var(--white);
-  animation: heroBody 1s ease-in-out forwards;
-  -webkit-animation: heroBody 1s ease-in-out forwards;
+  animation: var(--heroBody-text-animation);
+  -webkit-animation: var(--heroBody-text-animation);
   animation-delay: 0.75s;
   user-select: none;
 }
 
 .hero-body button {
   opacity: 0;
-  animation: heroBody 1s ease-in-out forwards;
-  -webkit-animation: heroBody 1s ease-in-out forwards;
+  animation: var(--heroBody-text-animation);
+  -webkit-animation: var(--heroBody-text-animation);
   animation-delay: 1s;
   width: 70%;
   font-size: 1.2rem;
@@ -243,8 +252,8 @@ main {
   height: 100px;
   background-image: url("/wave.webp");
   background-size: 1000px 100px;
-  animation: wave 4s ease-in-out infinite;
-  -webkit-animation: wave 4s ease-in-out infinite;
+  animation: var(--wave-animation);
+  -webkit-animation: var(--wave-animation);
 }
 
 .wave#wave0 {
@@ -276,6 +285,13 @@ main {
 
 #nav-more-option {
   display: none;
+  animation: var(--nav-header-animation);
+  -webkit-animation: var(--nav-header-animation);
+  transform: translateX(600px);
+  -webkit-transform: translateX(600px);
+  -moz-transform: translateX(600px);
+  -ms-transform: translateX(600px);
+  -o-transform: translateX(600px);
 }
 
 .xSymbol,
@@ -289,8 +305,19 @@ main {
   display: none;
 }
 
+header.nav.active .xSymbol,
+header.nav.active .burgerBtn-icon {
+  fill: var(--black);
+}
+
 @media (max-width: 1280px) {
   header.nav {
+    padding: 20px 70px;
+  }
+}
+
+@media (max-width: 1256px) {
+  header.nav.active {
     padding: 20px 70px;
   }
 }
@@ -329,7 +356,7 @@ main {
   }
 }
 
-@media (max-width: 874px) {
+@media (max-width: 890px) {
   .nav nav {
     gap: 10px;
   }
@@ -345,7 +372,7 @@ main {
   }
 }
 
-@media (max-width: 820px) {
+@media (max-width: 850px) {
   .hero-body h1 {
     font-size: 3.2rem;
   }
@@ -354,20 +381,36 @@ main {
   }
 
   .nav nav {
-    background-color: var(--white);
+    background-color: var(--nav-more-option-clr);
     flex-direction: column;
     position: absolute;
-    top: calc(40px + 40px);
+    top: calc(40px + 35px);
     right: 0;
-    gap: 10px;
+    gap: 0px;
     align-items: center;
-    padding: 30px;
     width: 100%;
     display: none;
+    backdrop-filter: blur(5px);
+  }
+
+  header.nav.active nav a {
+    color: var(--white);
+  }
+
+  header.nav.active nav a:hover {
+    background-color: var(--nav-more-option-hover-clr);
+    color: var(--white);
   }
 
   .nav nav a {
-    color: var(--black);
+    width: 100%;
+    border-bottom: 1px solid var(--border-bottom-nav-clr);
+    text-align: center;
+    padding: 15px 0px;
+  }
+
+  .nav nav a:last-child {
+    border-bottom: none;
   }
 
   #nav-more-option {
@@ -392,13 +435,17 @@ main {
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
   header.nav {
     padding: 30px;
   }
 
-  .logo-wrapper h1 {
-    font-size: 0.7rem;
+  header.nav.active {
+    padding: 20px 30px;
+  }
+
+  .logo-wrapper #logo-full-text {
+    font-size: 0.65rem;
   }
 }
 
@@ -408,7 +455,7 @@ main {
   }
 
   .logo-wrapper {
-    gap: 15px;
+    gap: 10px;
   }
 
   .logo-wrapper #logo-full-text {
@@ -418,6 +465,7 @@ main {
   .logo-wrapper #logo-crop-text {
     display: inline-block;
     font-size: 1.2rem;
+    letter-spacing: 2px;
   }
 
   .hero-body h1 {
@@ -430,6 +478,23 @@ main {
 
   .hero-body button {
     font-size: 0.9rem;
+  }
+  .wave {
+    background-size: 500px 100px;
+  }
+  .wave#wave0 {
+    background-position-x: 500px;
+  }
+
+  .wave#wave1 {
+    background-position-x: 250px;
+  }
+
+  .wave#wave2 {
+    background-position-x: 200px;
+  }
+  .wave#wave3 {
+    background-position-x: 100px;
   }
 }
 

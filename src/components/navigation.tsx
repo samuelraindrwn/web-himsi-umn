@@ -3,15 +3,17 @@ import BurgerBtn from "./templates/burgerBtn";
 import XSymbol from "./templates/x-symbol";
 import { useState } from "react";
 
-export default function Navigation() {
-  const [isActive, setActive] = useState(false);
-  function handleClick() {
-    setActive(!isActive);
-  }
+export default function Navigation({
+  handleOnClick,
+  isActive,
+}: {
+  handleOnClick: () => void;
+  isActive: boolean;
+}) {
   return (
     <>
       <span
-        onClick={handleClick}
+        onClick={handleOnClick}
         className={isActive ? "active" : ""}
         title="More Option"
         id="nav-more-option"

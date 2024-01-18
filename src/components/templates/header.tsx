@@ -9,6 +9,16 @@ export default function NavigationHeader() {
   const pathname = usePathname();
   const [isActive, setActive] = useState(false);
   const [isScrolled, setScrolled] = useState(false);
+  const [isNavActive, setNavActive] = useState(false);
+
+  function handleNavClick() {
+    setNavActive(!isNavActive);
+    if (!isNavActive && !isScrolled) {
+      setActive(true);
+    } else if (!isScrolled) {
+      setActive(false);
+    }
+  }
 
   const checkScrollOnReload = () => {
     const scrolled = window.scrollY > 0;
@@ -32,12 +42,12 @@ export default function NavigationHeader() {
   }, []);
 
   useEffect(() => {
-    if (pathname === "/" && !isScrolled) {
+    if (pathname === "/" && !isScrolled && isNavActive === false) {
       setActive(false);
     } else {
       setActive(true);
     }
-  }, [pathname, isScrolled]);
+  }, [pathname, isScrolled, isNavActive]);
 
   const handleOnClickReload = () => {
     window.location.reload();
@@ -57,7 +67,7 @@ export default function NavigationHeader() {
           <span>&nbsp;UMN</span>
         </h1>
       </div>
-      <Navigation />
+      <Navigation handleOnClick={handleNavClick} isActive={isNavActive} />
     </header>
   );
 }

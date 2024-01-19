@@ -4,11 +4,13 @@ import XSymbol from "../(assets)/x-symbol";
 import { useState, useEffect } from "react";
 
 export default function Navigation({
-  handleOnClick,
+  handleMoreOptionOnClick,
+  handleNavClick,
   isActive,
   pathname,
 }: {
-  handleOnClick: () => void;
+  handleMoreOptionOnClick: () => void;
+  handleNavClick: () => void;
   isActive: boolean;
   pathname: string;
 }) {
@@ -34,7 +36,7 @@ export default function Navigation({
   return (
     <>
       <span
-        onClick={handleOnClick}
+        onClick={handleMoreOptionOnClick}
         className={isActive ? "active" : ""}
         title="More Option"
         id="nav-more-option"
@@ -43,13 +45,14 @@ export default function Navigation({
         <XSymbol />
       </span>
       <nav>
-        <Link title="Home" href="/">
+        <Link title="Home" href="/" onClick={handleNavClick}>
           Home
         </Link>
         <Link
           title="About"
           href={isHomePage ? "/#about" : "/about"}
           style={getLinkStyle("about")}
+          onClick={handleNavClick}
         >
           About
         </Link>
@@ -57,6 +60,7 @@ export default function Navigation({
           title="HIMFACT"
           href={isHomePage ? "/#himfact" : "/himfact"}
           style={getLinkStyle("himfact")}
+          onClick={handleNavClick}
         >
           HIMFACT
         </Link>
@@ -64,6 +68,7 @@ export default function Navigation({
           title="Aspiration"
           href={isHomePage ? "/#aspiration" : "/aspiration"}
           style={getLinkStyle("aspiration")}
+          onClick={handleNavClick}
         >
           Aspiration
         </Link>

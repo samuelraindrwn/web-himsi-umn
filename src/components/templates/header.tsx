@@ -11,13 +11,17 @@ export default function NavigationHeader() {
   const [isScrolled, setScrolled] = useState(false);
   const [isNavActive, setNavActive] = useState(false);
 
-  function handleNavClick() {
+  function handleMoreOptionClick() {
     setNavActive(!isNavActive);
     if (!isNavActive && !isScrolled) {
       setActive(true);
     } else if (!isScrolled) {
       setActive(false);
     }
+  }
+
+  function handleNavClick() {
+    setNavActive(false);
   }
 
   const checkScrollOnReload = () => {
@@ -68,7 +72,8 @@ export default function NavigationHeader() {
         </h1>
       </div>
       <Navigation
-        handleOnClick={handleNavClick}
+        handleNavClick={handleNavClick}
+        handleMoreOptionOnClick={handleMoreOptionClick}
         isActive={isNavActive}
         pathname={pathname}
       />

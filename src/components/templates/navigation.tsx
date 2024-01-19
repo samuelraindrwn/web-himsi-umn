@@ -23,10 +23,12 @@ export default function Navigation({
     }
   }, [pathname]);
 
-  const getLinkStyle = (anchor: string) => {
-    return isPageActive && pathname === `/${anchor}`
-      ? { color: "var(--blue-himsi)" }
-      : {};
+  const getLinkStyle = (page: any) => {
+    const style =
+      isPageActive && !isActive && pathname === `/${page}`
+        ? { color: "var(--blue-himsi)" }
+        : {};
+    return style;
   };
 
   return (

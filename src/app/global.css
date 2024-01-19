@@ -37,7 +37,7 @@
   --hero-bg-color: #000000a0;
   --border-bottom-nav-clr: #537fd7;
 
-  --hero-bg-image: url("/img/hero.webp");
+  --hero-bg-image: url("/img/hero-compressed-hd.webp");
 
   --nav-header-animation: nav 1.25s ease-in-out forwards;
   --logo-header-animation: logo 1.25s ease-in-out forwards;
@@ -184,6 +184,7 @@ header.nav.active nav a:hover {
   right: 0;
   z-index: -1;
   background: var(--hero-bg-image) center center;
+  background-color: #000000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

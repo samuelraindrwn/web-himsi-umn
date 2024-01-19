@@ -1,10 +1,9 @@
-import Hero from "@/components/hero";
+import Home from "./(pages)/home/page";
 
-export default function Home() {
+export default function Index() {
   return (
     <>
-      <Hero />
-      <main>HALO DUNIA</main>
+      <Home />
     </>
   );
 }

@@ -45,6 +45,10 @@
   --wave-animation: wave 4s ease-in-out infinite;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 header {
   width: 100%;
   display: flex;
@@ -276,7 +280,6 @@ header.nav.active nav a:hover {
 }
 
 main {
-  height: 1000vh;
   background-color: white;
   padding: 50px;
 }
@@ -316,6 +319,7 @@ main {
   -webkit-animation-delay: 3.25s;
   animation-delay: 3.25s;
 }
+
 .wave#wave3 {
   z-index: 997;
   opacity: 0.7;
@@ -361,6 +365,32 @@ header.nav.active .burgerBtn-icon {
   header.nav.active {
     padding: 20px 70px;
   }
+}
+
+#about,
+#aspiration,
+#himfact {
+  width: 100%;
+  height: 700px;
+  padding: 30px 30px;
+  padding-top: calc(40px + 40px);
+  border: 1px solid red;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: calc(40px + 40px);
+}
+
+#about .left,
+#about .right,
+#himfact .left,
+#himfact .right,
+#aspiration .left,
+#aspiration .right {
+  flex: 1;
+  border: 1px solid red;
+  height: 100%;
 }
 
 @media (max-width: 1024px) {
@@ -475,6 +505,14 @@ header.nav.active .burgerBtn-icon {
     display: flex;
     -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s;
+  }
+}
+
+@media (max-width: 768px) {
+  #about,
+  #aspiration,
+  #himfact {
+    flex-direction: column;
   }
 }
 

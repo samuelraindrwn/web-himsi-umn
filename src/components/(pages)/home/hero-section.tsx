@@ -1,6 +1,11 @@
-import Wave from "./wave";
+"use client";
+
+import Wave from "../../(assets)/wave";
 
 export default function Hero() {
+  function handleOnClick() {
+    window.location.href = "/about";
+  }
   return (
     <>
       <section className="hero">
@@ -16,7 +21,7 @@ export default function Hero() {
               challenges. <br /> As we journey through life, piece by piece, our
               family narrative unfolds and reveals itself
             </p>
-            <button>Explore Our Journey</button>
+            <button onClick={handleOnClick}>Explore Our Journey</button>
           </div>
         </div>
         <Wave />

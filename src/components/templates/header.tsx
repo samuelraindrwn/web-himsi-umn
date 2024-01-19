@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Logo from "@/components/(assets)/logo";
 import { usePathname } from "next/navigation";
-import Navigation from "../navigation";
+import Navigation from "@/components/templates/navigation";
 
 export default function NavigationHeader() {
   const pathname = usePathname();
@@ -67,7 +67,11 @@ export default function NavigationHeader() {
           <span>&nbsp;UMN</span>
         </h1>
       </div>
-      <Navigation handleOnClick={handleNavClick} isActive={isNavActive} />
+      <Navigation
+        handleOnClick={handleNavClick}
+        isActive={isNavActive}
+        pathname={pathname}
+      />
     </header>
   );
 }

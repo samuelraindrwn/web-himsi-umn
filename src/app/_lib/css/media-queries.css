@@ -1,0 +1,185 @@
+@media (max-width: 1024px) {
+  .hero-body {
+    padding: 0px 30px;
+  }
+  .hero-body p {
+    font-size: 1rem;
+  }
+  .hero-body h1 {
+    font-size: 4rem;
+  }
+
+  .hero-body button {
+    font-size: 1rem;
+  }
+
+  .nav nav {
+    gap: 15px;
+  }
+
+  .nav nav a {
+    font-size: 0.825rem;
+  }
+
+  .logo-wrapper #logo-full-text {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 900px) {
+  header.nav {
+    padding: 20px 50px;
+  }
+}
+
+@media (max-width: 890px) {
+  .nav nav {
+    gap: 10px;
+  }
+  .logo-wrapper {
+    gap: 10px;
+  }
+  .logo {
+    width: 35px;
+    height: 35px;
+  }
+  .logo-wrapper #logo-full-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .hero-body h1 {
+    font-size: 3.2rem;
+  }
+  header.nav {
+    padding: 30px 50px;
+  }
+
+  .nav nav {
+    background-color: var(--nav-more-option-clr);
+    flex-direction: column;
+    position: absolute;
+    top: calc(40px + 35px);
+    right: 0;
+    gap: 0px;
+    align-items: center;
+    display: none;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    width: 100%;
+  }
+
+  header.nav.active nav a {
+    color: var(--white);
+  }
+
+  header.nav.active nav a:hover {
+    background-color: var(--nav-more-option-hover-clr);
+    color: var(--white);
+  }
+
+  .nav nav a {
+    width: 100%;
+    border-bottom: 1px solid var(--border-bottom-nav-clr);
+    text-align: center;
+    padding: 15px 0px;
+  }
+
+  .nav nav a:last-child {
+    border-bottom: none;
+  }
+
+  #nav-more-option {
+    display: block;
+  }
+
+  .burgerBtn-icon {
+    display: block;
+  }
+
+  #nav-more-option.active .burgerBtn-icon {
+    display: none;
+  }
+
+  #nav-more-option.active .xSymbol {
+    display: block;
+  }
+
+  #nav-more-option.active + nav {
+    display: flex;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+  }
+}
+
+@media (max-width: 768px) {
+  #about,
+  #aspiration,
+  #himfact {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  header.nav {
+    padding: 30px;
+  }
+
+  header.nav.active {
+    padding: 20px 30px;
+  }
+
+  .logo-wrapper #logo-full-text {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 426px) {
+  header.nav {
+    padding: 30px 40px;
+  }
+
+  .logo-wrapper {
+    gap: 10px;
+  }
+
+  .logo-wrapper #logo-full-text {
+    display: none;
+  }
+
+  .logo-wrapper #logo-crop-text {
+    display: inline-block;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  .hero-body h1 {
+    font-size: 2rem;
+  }
+
+  .hero-body p {
+    font-size: 1rem;
+  }
+
+  .hero-body button {
+    font-size: 0.9rem;
+  }
+  .wave {
+    background-size: 500px 100px;
+  }
+  .wave#wave0 {
+    background-position-x: 500px;
+  }
+
+  .wave#wave1 {
+    background-position-x: 250px;
+  }
+
+  .wave#wave2 {
+    background-position-x: 200px;
+  }
+  .wave#wave3 {
+    background-position-x: 100px;
+  }
+}

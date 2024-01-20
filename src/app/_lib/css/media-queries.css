@@ -1,4 +1,36 @@
+@media (max-width: 1440px) {
+  #about .right {
+    padding: 0 30px;
+  }
+  #about .right p {
+    font-size: 1.1rem;
+    line-height: 20px;
+  }
+
+  #about .btn-wrapper button {
+    margin-top: 0px;
+  }
+
+  #about .btn-wrapper button a {
+    font-size: 1.1rem;
+  }
+}
+
 @media (max-width: 1024px) {
+  #about .right p,
+  #about .btn-wrapper button a {
+    font-size: 1rem;
+  }
+  #tagline,
+  #tagline span {
+    font-size: 2rem;
+  }
+  #about .btn-wrapper button {
+    padding: 10px;
+  }
+  #about .btn-wrapper {
+    flex-direction: column;
+  }
   .hero-body {
     padding: 0px 30px;
   }
@@ -111,17 +143,56 @@
     -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s;
   }
-}
-
-@media (max-width: 768px) {
   #about,
   #aspiration,
   #himfact {
     flex-direction: column;
   }
+  #about .btn-wrapper {
+    flex-direction: row;
+  }
+  #about .left img {
+    width: 70%;
+  }
+
+  #about {
+    padding-top: 50px;
+  }
+  #tagline,
+  #tagline span {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  #about .right p {
+    text-align: center;
+  }
+  main {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  #tagline,
+  #tagline span {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #about .right p,
+  #about .btn-wrapper button a {
+    text-align: center;
+    font-size: 0.875rem;
+  }
+  #about .btn-wrapper {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 576px) {
+  #tagline,
+  #tagline span {
+    font-size: 1.5rem;
+    text-align: center;
+  }
   header.nav {
     padding: 30px;
   }
@@ -132,6 +203,15 @@
 
   .logo-wrapper #logo-full-text {
     font-size: 0.65rem;
+  }
+  #about .btn-wrapper {
+    align-items: center;
+  }
+  #about .btn-wrapper button {
+    width: 90%;
+  }
+  #about {
+    gap: 0;
   }
 }
 
@@ -181,5 +261,32 @@
   }
   .wave#wave3 {
     background-position-x: 100px;
+  }
+  #about .left img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 376px) {
+  #tagline,
+  #tagline span {
+    font-size: 1.2rem;
+  }
+  #about .right p {
+    font-size: 0.65rem;
+    line-height: 17px;
+  }
+  #about .btn-wrapper button {
+    padding: 5px;
+  }
+  #about .btn-wrapper {
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 321px) {
+  #about .btn-wrapper button a {
+    font-size: 0.7rem;
   }
 }

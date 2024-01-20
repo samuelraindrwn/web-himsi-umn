@@ -375,7 +375,7 @@ header.nav.active .burgerBtn-icon {
   height: 800px;
   padding: 30px 30px;
   padding-top: calc(40px + 70px);
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -390,7 +390,7 @@ header.nav.active .burgerBtn-icon {
 #aspiration .left,
 #aspiration .right {
   flex: 1;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 100%;
 }
 
@@ -442,7 +442,6 @@ header.nav.active .burgerBtn-icon {
 }
 
 #about .right {
-  border: none;
   padding: 0 80px;
   display: flex;
   justify-content: center;
@@ -476,4 +475,15 @@ header.nav.active .burgerBtn-icon {
 
 #about .btn-wrapper button:hover {
   box-shadow: 3px 5px 10px 0px #212121d5;
+}
+
+#about .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about .left img {
+  width: 100%;
+  height: auto;
 }

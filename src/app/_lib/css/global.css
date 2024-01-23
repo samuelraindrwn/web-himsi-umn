@@ -357,18 +357,6 @@ header.nav.active .burgerBtn-icon {
   fill: var(--black);
 }
 
-@media (max-width: 1280px) {
-  header.nav {
-    padding: 20px 70px;
-  }
-}
-
-@media (max-width: 1256px) {
-  header.nav.active {
-    padding: 20px 70px;
-  }
-}
-
 #about,
 #aspiration,
 #himfact {
@@ -486,4 +474,88 @@ header.nav.active .burgerBtn-icon {
 #about .left img {
   width: 100%;
   height: auto;
+}
+
+#himfact .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#himfact .product-wrapper {
+  border: 30px solid var(--blue-himsi);
+  width: calc(100vh - 100px);
+  height: calc(100vh - 100px);
+  transform: translateX(100px);
+  border-radius: 50%;
+  border-right: none;
+  -webkit-border-radius: 50% 0px 0px 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #f4e7bb;
+  position: relative;
+  box-shadow: 0px 0px 20px 0px var(--blue-himsi-bit-lighter);
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+  overflow: hidden;
+}
+
+#himfact .product-wrapper .product-highlight {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 150%;
+  transform: translate(-57%, -50%);
+  -webkit-transform: translate(-57%, -50%);
+  -moz-transform: translate(-57%, -50%);
+  -ms-transform: translate(-57%, -50%);
+  -o-transform: translate(-57%, -50%);
+  transition: 0.8s ease;
+  -webkit-transition: 0.8s ease;
+  -moz-transition: 0.8s ease;
+  -ms-transition: 0.8s ease;
+  -o-transition: 0.8s ease;
+  object-fit: contain;
+}
+#himfact .product-wrapper .img-wrapper {
+  width: 60px;
+  height: 60px;
+  transition: 0.3s ease;
+  border: 5px solid var(--blue-himsi);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: var(--white);
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 10px 0px;
+}
+
+#himfact .product-wrapper .img-wrapper:hover {
+  box-shadow: 0px 0px 15px 5px var(--orange-himsi);
+}
+
+#himfact .product-wrapper .img-wrapper.active {
+  box-shadow: 0px 0px 10px 5px var(--orange-himsi);
+  border-color: var(--orange-himsi);
+}
+
+.product-wrapper .product-nav {
+  z-index: 10;
 }

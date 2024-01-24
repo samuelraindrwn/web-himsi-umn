@@ -186,9 +186,6 @@
   #about .right p {
     text-align: center;
   }
-  main {
-    padding: 20px;
-  }
 }
 
 @media (max-width: 600px) {
@@ -236,6 +233,10 @@
 }
 
 @media (max-width: 426px) {
+  #about {
+    padding: 0px;
+    padding-top: 50px;
+  }
   header.nav {
     padding: 30px 40px;
   }

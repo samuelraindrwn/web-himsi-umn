@@ -9,6 +9,7 @@ export default function Logo() {
         className="logo"
         width={100}
         height={100}
+        priority={true}
       />
     </>
   );

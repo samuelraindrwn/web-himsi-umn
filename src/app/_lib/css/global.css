@@ -282,7 +282,7 @@ header.nav.active nav a:hover {
 
 main {
   background-color: white;
-  padding: 50px;
+  /* padding: 50px; */
   overflow: hidden;
 }
 
@@ -429,6 +429,10 @@ header.nav.active .burgerBtn-icon {
   color: var(--orange-himsi);
 }
 
+#about {
+  padding: 50px;
+}
+
 #about .right {
   padding: 0 80px;
   display: flex;
@@ -461,7 +465,8 @@ header.nav.active .burgerBtn-icon {
   color: var(--white);
 }
 
-#about .btn-wrapper button:hover {
+#about .btn-wrapper button:hover,
+#himfact .left button:hover {
   box-shadow: 3px 5px 10px 0px #212121d5;
 }
 
@@ -478,21 +483,21 @@ header.nav.active .burgerBtn-icon {
 
 #himfact .right {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  align-self: flex-end;
 }
 #himfact .product-wrapper {
-  border: 30px solid var(--blue-himsi);
-  width: calc(100vh - 100px);
-  height: calc(100vh - 100px);
-  transform: translateX(100px);
-  border-radius: 50%;
+  border: 50px solid var(--blue-himsi);
   border-right: none;
+  width: 690px;
+  height: 690px;
+  border-radius: 50%;
   -webkit-border-radius: 50% 0px 0px 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  background-color: #f4e7bb;
+  background-color: var(--white);
   position: relative;
   box-shadow: 0px 0px 20px 0px var(--blue-himsi-bit-lighter);
   transition: 0.3s ease;
@@ -500,11 +505,7 @@ header.nav.active .burgerBtn-icon {
   -moz-transition: 0.3s ease;
   -ms-transition: 0.3s ease;
   -o-transition: 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-right: 30px;
-  overflow: hidden;
+  background-color: #ffe2a7;
 }
 
 #himfact .product-wrapper .product-highlight {
@@ -513,23 +514,24 @@ header.nav.active .burgerBtn-icon {
   position: absolute;
   top: 50%;
   left: 150%;
-  transform: translate(-57%, -50%);
-  -webkit-transform: translate(-57%, -50%);
-  -moz-transform: translate(-57%, -50%);
-  -ms-transform: translate(-57%, -50%);
-  -o-transform: translate(-57%, -50%);
-  transition: 0.8s ease;
-  -webkit-transition: 0.8s ease;
-  -moz-transition: 0.8s ease;
-  -ms-transition: 0.8s ease;
-  -o-transition: 0.8s ease;
+  transform: translate(-40%, -50%);
+  -webkit-transform: translate(-40%, -50%);
+  -moz-transform: translate(-40%, -50%);
+  -ms-transform: translate(-40%, -50%);
+  -o-transform: translate(-40%, -50%);
+  transition: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
   object-fit: contain;
 }
 #himfact .product-wrapper .img-wrapper {
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
+  position: absolute;
   transition: 0.3s ease;
-  border: 5px solid var(--blue-himsi);
+  border: 10px solid var(--blue-himsi);
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -542,9 +544,40 @@ header.nav.active .burgerBtn-icon {
   -ms-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   background-size: contain;
-  background-repeat: no-repeat;
   background-position: center center;
-  margin: 10px 0px;
+}
+
+#himfact .product-wrapper .img-wrapper.product-1 {
+  top: -50px;
+  left: 90px;
+  background-size: 100%;
+}
+
+#himfact .product-wrapper .img-wrapper.product-2 {
+  top: 70px;
+  left: -40px;
+}
+
+#himfact .product-wrapper .img-wrapper.product-3 {
+  top: 50%;
+  left: -90px;
+  transform: translateY(-50%);
+  background-size: cover;
+  background-position: center;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+#himfact .product-wrapper .img-wrapper.product-4 {
+  bottom: 70px;
+  left: -40px;
+}
+
+#himfact .product-wrapper .img-wrapper.product-5 {
+  bottom: -50px;
+  left: 90px;
 }
 
 #himfact .product-wrapper .img-wrapper:hover {
@@ -556,6 +589,51 @@ header.nav.active .burgerBtn-icon {
   border-color: var(--orange-himsi);
 }
 
-.product-wrapper .product-nav {
-  z-index: 10;
+#himfact .left {
+  /* border: 1px solid red; */
+  padding: 100px;
+  max-width: 950px;
+}
+
+#himfact .left h1 {
+  font-size: 5rem;
+  letter-spacing: 10px;
+  line-height: 100%;
+  /* -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--orange-himsi); */
+}
+
+#himfact .left h1 span:first-child {
+  color: var(--blue-himsi);
+  font-family: "Poppins";
+  /* color: var(--white); */
+}
+
+#himfact .left h1 span:last-child {
+  font-family: "Poppins";
+  /* color: var(--white); */
+
+  color: var(--orange-himsi);
+}
+
+#himfact .left h2 {
+  font-family: "monospace", Times, serif;
+  /* text-transform: uppercase; */
+  font-size: 1.7rem;
+}
+
+#himfact .left p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  line-height: 30px;
+  text-transform: capitalize;
+}
+
+#himfact .left p span {
+  font-weight: 600;
+  color: var(--blue-himsi);
+}
+
+#himfact .left p span:last-child {
+  color: var(--orange-himsi);
 }

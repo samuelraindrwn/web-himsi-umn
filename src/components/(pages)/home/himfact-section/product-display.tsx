@@ -76,19 +76,17 @@ export default function ProductDisplay() {
           style={product.status ? { left: "50%" } : {}}
         />
       ))}
-      <div className="product-nav">
-        {product.map((product, i) => (
-          <div
-            onClick={() => handleClick(i)}
-            key={i}
-            id={`${i}`}
-            className={`img-wrapper product-${i + 1} ${
-              productActiveIndex === i ? "active" : ""
-            }`}
-            style={{ backgroundImage: `url(${product.url})` }}
-          ></div>
-        ))}
-      </div>
+      {product.map((product, i) => (
+        <div
+          onClick={() => handleClick(i)}
+          key={i}
+          id={`${i}`}
+          className={`img-wrapper product-${i + 1} ${
+            productActiveIndex === i ? "active" : ""
+          }`}
+          style={{ backgroundImage: `url(${product.url})` }}
+        ></div>
+      ))}
     </div>
   );
 }

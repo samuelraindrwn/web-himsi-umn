@@ -527,7 +527,6 @@ header.nav.active .burgerBtn-icon {
   width: 120px;
   height: 120px;
   position: absolute;
-  transition: 0.3s ease;
   border: 10px solid var(--blue-himsi);
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -536,10 +535,6 @@ header.nav.active .burgerBtn-icon {
   -o-border-radius: 50%;
   background-color: var(--white);
   cursor: pointer;
-  -webkit-transition: 0.3s ease;
-  -moz-transition: 0.3s ease;
-  -ms-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
   background-size: contain;
   background-position: center center;
 }
@@ -607,7 +602,7 @@ header.nav.active .burgerBtn-icon {
 }
 
 #himfact .left h2 {
-  font-family: "monospace", Times, serif;
+  font-family: "Monospace", "Times New Roman";
   font-size: 1.7rem;
 }
 

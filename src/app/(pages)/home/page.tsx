@@ -5,6 +5,7 @@ import AboutSection from "../../../components/(pages)/home/about-section/contain
 import AspirationSection from "@/components/(pages)/home/aspiration-section";
 import Hero from "@/components/(pages)/home/hero-section";
 import Animate from "../../_lib/animate";
+import HasilKarya from "@/components/(pages)/home/student-creation/creation-section";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <AboutSection />
         <HimfactSection />
         <AspirationSection />
+        <HasilKarya />
       </main>
     </>
   );

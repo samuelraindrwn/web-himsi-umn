@@ -621,3 +621,24 @@ header.nav.active .burgerBtn-icon {
 #himfact .left p span:last-child {
   color: var(--orange-himsi);
 }
+
+.creation-container {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 30px;
+}
+
+.creation-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.creation-wrapper div {
+  border: 1px solid red;
+  width: 350px;
+  height: 350px;
+}

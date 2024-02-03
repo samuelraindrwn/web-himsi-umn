@@ -642,3 +642,7 @@ header.nav.active .burgerBtn-icon {
   width: 350px;
   height: 350px;
 }
+
+#uiux video {
+  width: 100%;
+}

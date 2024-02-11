@@ -168,7 +168,7 @@ header.nav.active nav a:hover {
 
 .hero {
   display: flex;
-  height: 100dvh;
+  height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: center;

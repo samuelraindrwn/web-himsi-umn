@@ -168,7 +168,7 @@ header.nav.active nav a:hover {
 
 .hero {
   display: flex;
-  height: 100vh;
+  height: 100dvh;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -176,16 +176,16 @@ header.nav.active nav a:hover {
   overflow: hidden;
   /* ! Kode di bawah ini ga bs work di ios */
   /* ! This code won't work, since iOS uses the hight of the document and not the viewport:  */
-  background-image: var(--hero-bg-image);
+  /* background-image: var(--hero-bg-image);
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center; */
 }
 
 /* ! Agar di ios bisa work harus gunakan kode di bwh ini */
-/* .hero:after {
+.hero:after {
   content: "";
-  position: fixed;
+  position: absolute;
   top: 0;
   height: 100vh;
   left: 0;
@@ -197,7 +197,7 @@ header.nav.active nav a:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-} */
+}
 
 .hero-body {
   opacity: 1;

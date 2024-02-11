@@ -449,9 +449,9 @@
     font-size: 0.9rem;
   }
   .wave {
-    background-size: 500px 100px;
+    background-size: 400px 100px;
   }
-  .wave#wave0 {
+  /* .wave#wave0 {
     background-position-x: 500px;
   }
 
@@ -464,7 +464,7 @@
   }
   .wave#wave3 {
     background-position-x: 100px;
-  }
+  } */
   #about .left img {
     width: 80%;
   }

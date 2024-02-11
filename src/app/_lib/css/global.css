@@ -45,6 +45,14 @@
   --wave-animation: wave 4s ease-in-out infinite;
 }
 
+.font-clr-blue {
+  color: var(--blue-himsi) !important;
+}
+
+.font-clr-orange {
+  color: var(--orange-himsi) !important;
+}
+
 body {
   scroll-behavior: smooth;
 }
@@ -168,18 +176,18 @@ header.nav.active nav a:hover {
   overflow: hidden;
   /* ! Kode di bawah ini ga bs work di ios */
   /* ! This code won't work, since iOS uses the hight of the document and not the viewport:  */
-  /* background-image: var(--hero-bg-image);
+  background-image: var(--hero-bg-image);
   background-size: cover;
   background-attachment: fixed;
-  background-position: center; */
+  background-position: center;
 }
 
 /* ! Agar di ios bisa work harus gunakan kode di bwh ini */
-.hero:after {
+/* .hero:after {
   content: "";
   position: fixed;
   top: 0;
-  height: 100dvh;
+  height: 100vh;
   left: 0;
   right: 0;
   z-index: -1;
@@ -189,7 +197,7 @@ header.nav.active nav a:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+} */
 
 .hero-body {
   opacity: 1;
@@ -602,7 +610,6 @@ header.nav.active .burgerBtn-icon {
 }
 
 #himfact .left h2 {
-  font-family: "Monospace", "Times New Roman";
   font-size: 1.7rem;
 }
 
@@ -640,9 +647,19 @@ header.nav.active .burgerBtn-icon {
 .creation-wrapper div {
   border: 1px solid red;
   width: 350px;
-  height: 350px;
 }
 
 #uiux video {
+  border: 1px solid red;
   width: 100%;
+}
+
+#uiux .desc {
+  border: 1px solid red;
+  text-align: center;
+}
+
+.creation-container h1 {
+  font-size: 3rem;
+  letter-spacing: 5px;
 }

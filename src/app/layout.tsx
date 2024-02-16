@@ -1,7 +1,6 @@
 import "./_lib/css/global.css";
 import "./_lib/css/animation.css";
 import "./_lib/css/media-queries.css";
-import "./_lib/animate";
 import NavigationHeader from "@/components/templates/header";
 
 export const metadata = {

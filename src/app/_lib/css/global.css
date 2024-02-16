@@ -650,6 +650,7 @@ header.nav.active .burgerBtn-icon {
 }
 
 #uiux video {
+  padding: 20px;
   border: 1px solid red;
   width: 100%;
 }

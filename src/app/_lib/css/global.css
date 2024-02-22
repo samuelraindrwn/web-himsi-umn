@@ -645,19 +645,20 @@ header.nav.active .burgerBtn-icon {
 }
 
 .creation-wrapper div {
-  border: 1px solid red;
-  width: 350px;
+  /* border: 1px solid red; */
+  width: 100%;
 }
 
 #uiux video {
   padding: 20px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
 }
 
-#uiux .desc {
-  border: 1px solid red;
+#uiux h2 {
   text-align: center;
+  font-size: 2.3rem;
+  letter-spacing: 3px;
 }
 
 .creation-container h1 {

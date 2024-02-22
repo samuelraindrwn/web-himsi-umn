@@ -11,8 +11,6 @@ export default function HasilKarya() {
         <div className="creation-wrapper">
           <Uiux />
           <div>DATA VISUALISASI</div>
-          <div>WEBSITE</div>
-          <div>Mobile Apps</div>
         </div>
       </section>
     </>

@@ -642,23 +642,15 @@ header.nav.active .burgerBtn-icon {
 .creation-wrapper {
   display: flex;
   gap: 20px;
-}
-
-.creation-wrapper div {
-  /* border: 1px solid red; */
   width: 100%;
+  border: 1px solid red;
+  justify-content: center;
 }
 
-#uiux video {
+.creation-wrapper video {
   padding: 20px;
-  /* border: 1px solid red; */
-  width: 100%;
-}
-
-#uiux h2 {
-  text-align: center;
-  font-size: 2.3rem;
-  letter-spacing: 3px;
+  border: 1px solid red;
+  width: 50%;
 }
 
 .creation-container h1 {

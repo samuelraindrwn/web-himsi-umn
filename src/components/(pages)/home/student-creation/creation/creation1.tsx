@@ -1,16 +1,23 @@
+import Image from "next/image";
+
 export default function creation1() {
+  const creation = [
+    {
+      id: 1,
+      url: "/vids/uiux.mp4",
+    },
+    {
+      id: 2,
+      url: "/vids/datvis.mp4",
+    },
+  ];
   return (
-    <div id="uiux">
-      <video loop={true} autoPlay muted>
-        <source src="/vids/uiux.mp4" type="video/mp4" />
-      </video>
-      <article className="desc">
-        {/* <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quis
-          voluptatem est perferendis fuga sapiente natus saepe eos omnis atque
-          maxime expedita reprehenderit aliquam dicta?
-        </p> */}
-      </article>
-    </div>
+    <>
+      {creation.map((creation, i) => (
+        <video key={i} loop={true} autoPlay muted>
+          <source src={creation.url} type="video/mp4" />
+        </video>
+      ))}
+    </>
   );
 }

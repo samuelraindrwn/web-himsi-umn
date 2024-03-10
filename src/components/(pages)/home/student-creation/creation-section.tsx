@@ -1,4 +1,4 @@
-import Uiux from "./creation/creation1";
+import StudentCreation from "./creation/creation1";
 
 export default function HasilKarya() {
   return (
@@ -9,8 +9,7 @@ export default function HasilKarya() {
           <span className="font-clr-orange">SISTEM INFORMASI</span>
         </h1>
         <div className="creation-wrapper">
-          <Uiux />
-          <div>DATA VISUALISASI</div>
+          <StudentCreation />
         </div>
       </section>
     </>

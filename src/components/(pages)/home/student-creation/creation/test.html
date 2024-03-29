@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elemen Mengikuti Kursor</title>
+    <style>
+      #elementToFollow {
+        display: none;
+        position: absolute;
+        opacity: 0.7;
+        width: 50px;
+        height: 50px;
+        background-color: #3498db;
+        border-radius: 50%;
+        pointer-events: none;
+      }
+
+      /* body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      } */
+
+      #hoverElement:hover + #elementToFollow {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="hoverElement">Hover di sini</div>
+    <div id="elementToFollow"></div>
+
+    <script>
+      document.addEventListener("mousemove", function (event) {
+        var elementToFollow = document.getElementById("elementToFollow");
+
+        // Perbarui posisi elemen berdasarkan posisi kursor mouse
+        var offsetX = event.pageX < window.innerWidth / 2 ? -50 : 50;
+        elementToFollow.style.left =
+          event.pageX - elementToFollow.clientWidth / 2 + offsetX + "px";
+        elementToFollow.style.top =
+          event.pageY - elementToFollow.clientHeight / 2 + "px";
+      });
+    </script>
+  </body>
+</html>

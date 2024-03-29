@@ -5,6 +5,7 @@ import AboutSection from "../../../components/(pages)/home/about-section/contain
 import AspirationSection from "@/components/(pages)/home/aspiration-section";
 import Hero from "@/components/(pages)/home/hero-section";
 import HasilKarya from "@/components/(pages)/home/student-creation/creation-section";
+import BimsiSection from "@/components/(pages)/home/bimsi-section/bimsi-section";
 
 export default function Home() {
   return (
@@ -13,8 +14,9 @@ export default function Home() {
       <main>
         <AboutSection />
         <HimfactSection />
-        <AspirationSection />
         <HasilKarya />
+        <BimsiSection />
+        <AspirationSection />
       </main>
     </>
   );

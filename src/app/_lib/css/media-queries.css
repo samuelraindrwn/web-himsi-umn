@@ -90,6 +90,9 @@
   }
 }
 @media screen and (max-width: 1024px) {
+  .creation-vid-wrapper h2 {
+    font-size: 1.5rem;
+  }
   #about .right p,
   #about .btn-wrapper button a {
     font-size: 1rem;
@@ -289,9 +292,26 @@
   #about .right p {
     text-align: center;
   }
+  .creation-container {
+    gap: 15px;
+  }
+  .creation-container h1 {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 700px) {
+  .creation-vid-wrapper h2 {
+    font-size: 2rem;
+  }
+  .creation-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .creation-vid-wrapper {
+    width: 100%;
+  }
   #himfact .right {
     margin-bottom: 10px;
   }
@@ -343,6 +363,9 @@
 }
 
 @media screen and (max-width: 576px) {
+  .creation-vid-wrapper h2 {
+    font-size: 1.7rem;
+  }
   #tagline,
   #tagline span {
     font-size: 1.5rem;
@@ -415,6 +438,12 @@
 }
 
 @media screen and (max-width: 426px) {
+  .creation-container h1 {
+    font-size: 1.7rem;
+  }
+  .creation-vid-wrapper h2 {
+    font-size: 1.4rem;
+  }
   #about {
     padding: 0px;
     padding-top: 50px;

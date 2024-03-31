@@ -1,6 +1,7 @@
 import Link from "next/link";
 import BurgerBtn from "../(assets)/burgerBtn";
 import XSymbol from "../(assets)/x-symbol";
+import ChevronDown from "../(assets)/chevronDown";
 import { useState, useEffect } from "react";
 
 export default function Navigation({
@@ -56,22 +57,35 @@ export default function Navigation({
         >
           About
         </Link>
-        <Link
-          title="HIMFACT"
-          href={isHomePage ? "/#himfact" : "/himfact"}
-          style={getLinkStyle("himfact")}
-          onClick={handleNavClick}
-        >
-          HIMFACT
-        </Link>
-        <Link
-          title="Aspiration"
-          href={isHomePage ? "/#aspiration" : "/aspiration"}
-          style={getLinkStyle("aspiration")}
-          onClick={handleNavClick}
-        >
-          Aspiration
-        </Link>
+        <a title="Services" id="services">
+          Services <ChevronDown />
+        </a>
+        <div className="services">
+          <Link
+            title="HIMFACT"
+            href={isHomePage ? "/#himfact" : "/himfact"}
+            style={getLinkStyle("himfact")}
+            onClick={handleNavClick}
+          >
+            HIMFACT
+          </Link>
+          <Link
+            title="BIMSI"
+            href={isHomePage ? "/#bimsi" : "/bimsi"}
+            style={getLinkStyle("bimsi")}
+            onClick={handleNavClick}
+          >
+            BIMSI
+          </Link>
+          <Link
+            title="Aspiration"
+            href={isHomePage ? "/#aspiration" : "/aspiration"}
+            style={getLinkStyle("aspiration")}
+            onClick={handleNavClick}
+          >
+            Aspiration
+          </Link>
+        </div>
       </nav>
     </>
   );

@@ -17,6 +17,7 @@ export default function creation1() {
         <div key={i} className="creation-vid-wrapper">
           <video
             controls={false}
+            playsInline
             id={"creation" + creation.id}
             loop={true}
             autoPlay

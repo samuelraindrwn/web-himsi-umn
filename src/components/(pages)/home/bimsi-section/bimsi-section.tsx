@@ -1,9 +1,9 @@
 export default function BimsiSection() {
   return (
     <>
-      <div id="bimsi" className="bimsi-container">
-        <p>BIMSI</p>
-      </div>
+      <section id="bimsi" className="bimsi-container">
+        <div className="bimsi-wrapper">bimsi</div>
+      </section>
     </>
   );
 }

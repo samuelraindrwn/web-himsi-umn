@@ -17,6 +17,12 @@ export default function Navigation({
 }) {
   const [isPageActive, setPageActive] = useState(false);
   const [isHomePage, setHomePage] = useState(true);
+  const [isServiceOpen, setServiceOpen] = useState(false);
+
+  function handleServiceClick() {
+    setServiceOpen(!isServiceOpen);
+  }
+
   useEffect(() => {
     if (pathname !== "/") {
       setPageActive(true);
@@ -57,10 +63,11 @@ export default function Navigation({
         >
           About
         </Link>
-        <a title="Services" id="services">
-          Services <ChevronDown />
+        <a onClick={handleServiceClick} title="Services" id="services">
+          Services
+          <ChevronDown isServiceOpen={isServiceOpen} />
         </a>
-        <div className="services">
+        <div className={isServiceOpen ? "services active" : "services"}>
           <Link
             title="HIMFACT"
             href={isHomePage ? "/#himfact" : "/himfact"}

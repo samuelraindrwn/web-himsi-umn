@@ -126,8 +126,9 @@ header.nav.active nav a:hover {
 
 #services {
   display: flex;
-  gap: 5px;
+  gap: 7px;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -159,15 +160,55 @@ header.nav.active #services:hover #ChevronDown-icon {
   -o-transition: 0.3s ease;
 }
 
+#ChevronDown-icon.active {
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+}
+
 .services {
   flex-direction: column;
-  background-color: red;
+  background-color: var(--orange-himsi);
+  border-radius: 10px;
   position: absolute;
-  bottom: -130px;
-  right: 0;
+  bottom: -170px;
+  right: -30px;
   align-items: center;
+  display: flex;
+  overflow: hidden;
+  height: 0px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0px 5px 10px 0px black;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  justify-content: center;
+}
+
+.services.active {
+  height: 125px;
+}
+
+#services.active {
+  color: var(--blue-himsi);
+}
+
+#services + .services a {
+  color: var(--white);
   padding: 10px 30px;
-  display: none;
+  width: 100%;
+  text-align: center;
+}
+
+#services + .services a:hover {
+  background-color: #00000021;
 }
 
 .logo {
@@ -723,4 +764,10 @@ header.nav.active .burgerBtn-icon {
   width: 100%;
   height: 100vh;
   border: 1px solid red;
+}
+
+.bimsi-wrapper {
+  height: 500px;
+  width: 100%;
+  background-color: blue;
 }

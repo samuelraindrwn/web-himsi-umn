@@ -1,7 +1,15 @@
-export default function ChevronDown() {
+export default function ChevronDown({
+  isServiceOpen,
+}: {
+  isServiceOpen: boolean;
+}) {
   return (
     <>
-      <svg id="ChevronDown-icon" viewBox="0 0 185.344 185.344">
+      <svg
+        className={isServiceOpen ? "active" : ""}
+        id="ChevronDown-icon"
+        viewBox="0 0 185.344 185.344"
+      >
         <g>
           <g>
             <path

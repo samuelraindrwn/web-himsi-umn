@@ -754,7 +754,9 @@ header.nav.active .burgerBtn-icon {
   flex-direction: column;
   width: 50%;
 }
-
+.creation-vid-wrappervideo::-webkit-media-controls {
+  display: none !important;
+}
 .creation-vid-wrapper h2 {
   font-size: 2rem;
   text-align: center;

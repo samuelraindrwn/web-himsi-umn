@@ -15,7 +15,13 @@ export default function creation1() {
     <>
       {creation.map((creation, i) => (
         <div key={i} className="creation-vid-wrapper">
-          <video id={"creation" + creation.id} loop={true} autoPlay muted>
+          <video
+            controls={false}
+            id={"creation" + creation.id}
+            loop={true}
+            autoPlay
+            muted
+          >
             <source src={creation.url} type="video/mp4" />
           </video>
           <h2>{creation.title}</h2>

@@ -9,7 +9,7 @@ export default function NavigationHeader() {
   const pathname = usePathname();
   const [isActive, setActive] = useState(false);
   const [isScrolled, setScrolled] = useState(false);
-  const [isNavActive, setNavActive] = useState(true);
+  const [isNavActive, setNavActive] = useState(false);
 
   function handleMoreOptionClick() {
     setNavActive(!isNavActive);

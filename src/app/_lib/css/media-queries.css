@@ -209,7 +209,7 @@
 }
 @media screen and (max-width: 850px) {
   .services {
-    bottom: -125px;
+    bottom: -120px;
     right: 0;
     width: 100%;
     border-radius: 0px;
@@ -222,6 +222,7 @@
     backdrop-filter: blur(5px);
     box-shadow: inset 0px 7px 5px -5px rgba(0, 0, 0, 0.75);
   }
+
   header.nav.active #ChevronDown-icon,
   header.nav.active #services:hover #ChevronDown-icon {
     fill: var(--white);
@@ -325,6 +326,19 @@
 }
 
 @media screen and (max-width: 700px) {
+  .bimsi-body {
+    padding: 70px;
+  }
+  .bimsi-wrapper h1 {
+    font-size: 2.3rem;
+  }
+  .bimsi-wrapper p {
+    font-size: 1.2rem;
+    line-height: 30px;
+  }
+  .bimsi-wrapper button {
+    font-size: 1.2rem;
+  }
   .creation-vid-wrapper h2 {
     font-size: 2rem;
   }
@@ -387,6 +401,16 @@
 }
 
 @media screen and (max-width: 576px) {
+  .bimsi-body {
+    padding: 50px;
+  }
+  .bimsi-wrapper p {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+  .bimsi-wrapper button {
+    font-size: 1.1rem;
+  }
   .creation-vid-wrapper h2 {
     font-size: 1.7rem;
   }
@@ -462,6 +486,14 @@
 }
 
 @media screen and (max-width: 426px) {
+  .bimsi-wrapper h1 {
+    font-size: 1.7rem;
+    letter-spacing: 5px;
+  }
+  .bimsi-wrapper button {
+    font-size: 0.9rem;
+    width: 170px;
+  }
   .creation-container h1 {
     font-size: 1.7rem;
   }
@@ -571,6 +603,13 @@
 }
 
 @media screen and (max-width: 321px) {
+  .bimsi-wrapper h1 {
+    font-size: 1.5rem;
+  }
+  .bimsi-wrapper p {
+    font-size: 0.875rem;
+    line-height: 20px;
+  }
   #about .btn-wrapper button a {
     font-size: 0.7rem;
   }

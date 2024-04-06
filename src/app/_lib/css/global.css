@@ -183,7 +183,7 @@ header.nav.active #services:hover #ChevronDown-icon {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  box-shadow: 0px 5px 10px 0px black;
+  box-shadow: 0px 3px 7px 0px black;
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
   -moz-transition: 0.3s ease;
@@ -193,7 +193,7 @@ header.nav.active #services:hover #ChevronDown-icon {
 }
 
 .services.active {
-  height: 125px;
+  height: 120px;
 }
 
 #services.active {
@@ -754,9 +754,11 @@ header.nav.active .burgerBtn-icon {
   flex-direction: column;
   width: 50%;
 }
+
 .creation-vid-wrappervideo::-webkit-media-controls {
   display: none !important;
 }
+
 .creation-vid-wrapper h2 {
   font-size: 2rem;
   text-align: center;
@@ -765,11 +767,53 @@ header.nav.active .burgerBtn-icon {
 .bimsi-container {
   width: 100%;
   height: 100vh;
-  border: 1px solid red;
 }
 
 .bimsi-wrapper {
-  height: 500px;
+  height: 600px;
   width: 100%;
-  background-color: blue;
+  position: relative;
+  overflow: hidden;
+  background: url(/img/BIMSI.webp) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bimsi-body {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 120px;
+  color: var(--white);
+  background-color: #f15b2dc4;
+}
+
+.bimsi-wrapper h1 {
+  font-size: 3rem;
+  letter-spacing: 10px;
+  margin-bottom: 20px;
+}
+
+.bimsi-body p {
+  font-size: 1.5rem;
+  line-height: 35px;
+}
+
+.bimsi-body button {
+  border-color: var(--white);
+  color: var(--white);
+  width: 270px;
+  font-size: 1.3rem;
+}
+
+.bimsi-body button:hover {
+  background-color: var(--white);
+  color: var(--orange-himsi);
+  box-shadow: 0px 0px 15px 0px var(--white);
 }

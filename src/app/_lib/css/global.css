@@ -296,8 +296,8 @@ header.nav.active #services:hover #ChevronDown-icon {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  -webkit-backdrop-filter: blur(1px);
-  backdrop-filter: blur(1px);
+  /* -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px); */
   background-color: var(--hero-bg-color);
   position: relative;
 }

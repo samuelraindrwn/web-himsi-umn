@@ -62,6 +62,9 @@
 }
 
 @media screen and (max-width: 1440px) {
+  .bimsi-body {
+    padding: 120px;
+  }
   #about .right {
     padding: 0 30px;
   }
@@ -79,6 +82,18 @@
   }
 }
 @media screen and (max-width: 1280px) {
+  .bimsi-wrapper h1 {
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+  }
+  .bimsi-body p {
+    font-size: 1.2rem;
+    line-height: 30px;
+  }
+  .bimsi-logo-wrapper img {
+    width: 250px;
+  }
   header.nav {
     padding: 20px 70px;
   }
@@ -90,6 +105,16 @@
   }
 }
 @media screen and (max-width: 1024px) {
+  .bimsi-wrapper h1 {
+    font-size: 2.3rem;
+  }
+  .bimsi-body p {
+    font-size: 1.1rem;
+    line-height: 27px;
+  }
+  .bimsi-body {
+    padding: 70px;
+  }
   .creation-vid-wrapper h2 {
     font-size: 1.5rem;
   }
@@ -188,6 +213,15 @@
 }
 
 @media screen and (max-width: 890px) {
+  .bimsi-body {
+    gap: 0px;
+  }
+  .bimsi-logo-wrapper img {
+    display: none;
+  }
+  .bimsi-text {
+    text-align: center;
+  }
   .nav nav {
     gap: 10px;
   }
@@ -403,7 +437,7 @@
 
 @media screen and (max-width: 576px) {
   .bimsi-body {
-    padding: 50px;
+    padding: 30px;
   }
   .bimsi-wrapper p {
     font-size: 1rem;
@@ -557,6 +591,9 @@
 }
 
 @media screen and (max-width: 376px) {
+  .bimsi-wrapper {
+    height: auto;
+  }
   #tagline,
   #tagline span {
     font-size: 1.2rem;

@@ -63,6 +63,14 @@ export default function Navigation({
         >
           About
         </Link>
+        <Link
+          title="About"
+          href={isHomePage ? "/#about" : "/about"}
+          style={getLinkStyle("about")}
+          onClick={handleNavClick}
+        >
+          Events
+        </Link>
         <a onClick={handleServiceClick} title="Services" id="services">
           Services
           <ChevronDown isServiceOpen={isServiceOpen} />

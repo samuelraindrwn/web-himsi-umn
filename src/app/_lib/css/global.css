@@ -523,6 +523,8 @@ header.nav.active .burgerBtn-icon {
 
 #about {
   padding: 50px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 #about .right {

@@ -10,6 +10,11 @@ export default function NavigationHeader() {
   const [isActive, setActive] = useState(false);
   const [isScrolled, setScrolled] = useState(false);
   const [isNavActive, setNavActive] = useState(false);
+  const [isServiceOpen, setServiceOpen] = useState(false);
+
+  function handleServiceOnClick() {
+    setServiceOpen(!isServiceOpen);
+  }
 
   function handleMoreOptionClick() {
     setNavActive(!isNavActive);
@@ -17,6 +22,9 @@ export default function NavigationHeader() {
       setActive(true);
     } else if (!isScrolled) {
       setActive(false);
+    }
+    if (isServiceOpen) {
+      setServiceOpen(false);
     }
   }
 
@@ -74,6 +82,8 @@ export default function NavigationHeader() {
       <Navigation
         handleNavClick={handleNavClick}
         handleMoreOptionOnClick={handleMoreOptionClick}
+        handleServiceOnClick={handleServiceOnClick}
+        isServiceOpen={isServiceOpen}
         isActive={isNavActive}
         pathname={pathname}
       />

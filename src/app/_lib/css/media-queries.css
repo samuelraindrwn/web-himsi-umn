@@ -246,7 +246,6 @@
     color: var(--nav-more-option-clr);
   } */
   .services {
-    bottom: -120px;
     right: 0;
     width: 100%;
     border-radius: 0px;
@@ -256,6 +255,12 @@
     -o-border-radius: 0px;
     background-color: #f15b2df6;
     box-shadow: inset 0px 7px 5px -5px rgba(0, 0, 0, 0.75);
+  }
+
+  header.nav.active .services.active {
+    height: 120px;
+    bottom: -120px;
+    opacity: 1;
   }
 
   header.nav.active #ChevronDown-icon,

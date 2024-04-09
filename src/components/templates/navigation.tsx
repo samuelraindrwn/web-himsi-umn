@@ -7,21 +7,20 @@ import { useState, useEffect } from "react";
 export default function Navigation({
   handleMoreOptionOnClick,
   handleNavClick,
+  handleServiceOnClick,
+  isServiceOpen,
   isActive,
   pathname,
 }: {
   handleMoreOptionOnClick: () => void;
   handleNavClick: () => void;
+  handleServiceOnClick: () => void;
+  isServiceOpen: boolean;
   isActive: boolean;
   pathname: string;
 }) {
   const [isPageActive, setPageActive] = useState(false);
   const [isHomePage, setHomePage] = useState(true);
-  const [isServiceOpen, setServiceOpen] = useState(false);
-
-  function handleServiceClick() {
-    setServiceOpen(!isServiceOpen);
-  }
 
   useEffect(() => {
     if (pathname !== "/") {
@@ -71,7 +70,7 @@ export default function Navigation({
         >
           Events
         </Link>
-        <a onClick={handleServiceClick} title="Services" id="services">
+        <a onClick={handleServiceOnClick} title="Services" id="services">
           Services
           <ChevronDown isServiceOpen={isServiceOpen} />
         </a>

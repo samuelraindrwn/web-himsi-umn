@@ -173,7 +173,7 @@ header.nav.active #services:hover #ChevronDown-icon {
   background-color: var(--orange-himsi);
   border-radius: 10px;
   position: absolute;
-  bottom: -170px;
+  bottom: 0px;
   right: -30px;
   align-items: center;
   display: flex;
@@ -190,10 +190,18 @@ header.nav.active #services:hover #ChevronDown-icon {
   -ms-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   justify-content: center;
+  opacity: 0;
 }
 
-.services.active {
+header.nav .services.active {
   height: 120px;
+  bottom: -140px;
+  opacity: 1;
+}
+
+header.nav.active .services.active {
+  height: 120px;
+  bottom: -160px;
 }
 
 #services.active {

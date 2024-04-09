@@ -461,7 +461,8 @@ header.nav.active .burgerBtn-icon {
 #about,
 #aspiration,
 #himfact,
-#bimsi {
+#bimsi,
+#event {
   width: 100%;
   padding-top: calc(40px + 50px);
   display: flex;
@@ -732,7 +733,7 @@ header.nav.active .burgerBtn-icon {
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  padding-top: 50px;
+  padding-top: 120px;
 }
 
 .creation-wrapper {
@@ -770,6 +771,10 @@ header.nav.active .burgerBtn-icon {
 .creation-vid-wrapper h2 {
   font-size: 2rem;
   text-align: center;
+}
+
+#bimsi {
+  padding-top: 20px;
 }
 
 .bimsi-container {
@@ -839,4 +844,40 @@ header.nav.active .burgerBtn-icon {
   background-color: var(--white);
   color: var(--orange-himsi);
   box-shadow: 0px 0px 15px 0px var(--white);
+}
+
+#event {
+  border: 1px solid red;
+  height: 100vh;
+  padding-top: 0px;
+}
+
+.event-container {
+  border: 1px solid red;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.event-wrapper {
+  border: 1px solid blue;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 30px 50px;
+  gap: 30px;
+}
+
+.event-card {
+  border: 1px solid green;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

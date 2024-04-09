@@ -6,6 +6,7 @@ import AspirationSection from "@/components/(pages)/home/aspiration-section";
 import Hero from "@/components/(pages)/home/hero-section";
 import HasilKarya from "@/components/(pages)/home/student-creation/creation-section";
 import BimsiSection from "@/components/(pages)/home/bimsi-section/bimsi-section";
+import EventSection from "@/components/(pages)/home/event-section/event-section";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <HimfactSection />
         <HasilKarya />
         <BimsiSection />
+        <EventSection />
         <AspirationSection />
       </main>
     </>

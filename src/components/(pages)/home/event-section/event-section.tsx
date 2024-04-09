@@ -28,15 +28,18 @@ export default function EventSection() {
     <>
       <section id="event">
         <div className="event-container">
-          <h1>OUR MAIN EVENTS</h1>
+          <h1>
+            <span>OUR MAIN</span> EVENTS
+          </h1>
           <div className="event-wrapper">
             {events.map((events, i) => (
               <div className="event-card" key={i}>
                 {events.eventName}
+                <div className="desc-event"></div>
               </div>
             ))}
           </div>
-          <button className="btn-style-1">Learn More</button>
+          <button className="btn-style-1">See More Events</button>
         </div>
       </section>
     </>

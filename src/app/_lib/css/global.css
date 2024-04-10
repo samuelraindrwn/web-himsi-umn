@@ -774,7 +774,8 @@ header.nav.active .burgerBtn-icon {
 }
 
 #bimsi {
-  padding-top: 20px;
+  margin-top: 80px;
+  height: auto;
 }
 
 .bimsi-container {
@@ -854,12 +855,13 @@ header.nav.active .burgerBtn-icon {
 
 .event-container {
   border: 1px solid red;
-  height: 600px;
+  height: 700px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 80px;
 }
 
 .event-wrapper {
@@ -926,4 +928,8 @@ header.nav.active .burgerBtn-icon {
   /* color: var(--orange-himsi); */
   background-color: var(--blue-himsi);
   border-color: var(--blue-himsi);
+}
+
+.event-wrapper span {
+  display: none;
 }

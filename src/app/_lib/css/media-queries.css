@@ -451,6 +451,7 @@
   .event-container {
     height: auto;
   }
+
   .event-wrapper {
     display: block;
     position: relative;
@@ -525,6 +526,13 @@
 }
 
 @media screen and (max-width: 576px) {
+  .creation-container {
+    padding-top: 30px;
+  }
+  .event-container h1 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
   .bimsi-body {
     padding: 30px;
   }
@@ -730,6 +738,28 @@
 }
 
 @media screen and (max-width: 321px) {
+  .hero-body p {
+    font-size: 0.7rem;
+  }
+  .hero-body button {
+    font-size: 0.7rem;
+    padding: 15px;
+  }
+  .carousel-ctrl {
+    top: 5%;
+  }
+  .event-wrapper {
+    height: 400px;
+  }
+  .event-card {
+    width: 200px;
+    height: 300px;
+  }
+  .event-container h1 {
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+    text-align: center;
+  }
   .bimsi-wrapper h1 {
     font-size: 1.5rem;
   }

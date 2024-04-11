@@ -453,27 +453,26 @@
   }
   .event-wrapper {
     display: block;
-    /* text-align: center; */
     position: relative;
-    height: 450px;
+    height: 500px;
   }
-  .event-wrapper span {
-    display: inline-block;
-    background-color: yellow;
+
+  .carousel-ctrl {
+    display: flex;
+    width: fit-content;
+    gap: 30px;
     position: absolute;
-  }
-  .event-wrapper #next {
-    right: 0;
-    top: 0;
-  }
-  .event-wrapper #prev {
-    left: 0;
-    top: 0;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
   }
   .event-card {
-    /*display: inline-block;
-    */
     transition: 0.8s ease;
+    margin-top: 20px;
     width: 300px;
     height: 400px;
     position: absolute;
@@ -489,10 +488,12 @@
     -ms-transition: 0.8s ease;
     -o-transition: 0.8s ease;
     opacity: 0;
+    scale: 0.8;
   }
 
   .event-card.active {
     opacity: 1;
+    scale: 1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -505,6 +506,7 @@
   .event-card.next {
     left: -100%;
     opacity: 0;
+    scale: 0.8;
   }
 
   #tagline,

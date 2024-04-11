@@ -925,11 +925,40 @@ header.nav.active .burgerBtn-icon {
 }
 
 .event-container button:hover {
-  /* color: var(--orange-himsi); */
   background-color: var(--blue-himsi);
   border-color: var(--blue-himsi);
 }
 
-.event-wrapper span {
+.carousel-ctrl {
   display: none;
+}
+
+.carousel-ctrl span {
+  background-color: rgb(205, 205, 205);
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-ctrl span svg {
+  fill: var(--white);
+}
+
+.chevron {
+  width: 20px;
+  height: 20px;
+}
+
+.chevron-left .chevron {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }

@@ -1000,12 +1000,12 @@ header.nav.active .burgerBtn-icon {
 }
 
 .event-card-inner.flip .front .logo-event-wrapper img {
-  transition: 0.3s ease;
+  transition: 0.6s ease;
   opacity: 0;
-  -webkit-transition: 0.3s ease;
-  -moz-transition: 0.3s ease;
-  -ms-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
+  -webkit-transition: 0.6s ease;
+  -moz-transition: 0.6s ease;
+  -ms-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
 }
 
 .event-card-inner .front,

@@ -999,13 +999,13 @@ header.nav.active .burgerBtn-icon {
   -o-transform: rotateY(180deg);
 }
 
-.event-card-inner.flip .front .logo-event-wrapper {
-  transition: 0.1s ease;
+.event-card-inner.flip .front .logo-event-wrapper img {
+  transition: 0.3s ease;
   opacity: 0;
-  -webkit-transition: 0.1s ease;
-  -moz-transition: 0.1s ease;
-  -ms-transition: 0.1s ease;
-  -o-transition: 0.1s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
 }
 
 .event-card-inner .front,

@@ -904,19 +904,17 @@ header.nav.active .burgerBtn-icon {
   width: 40%;
   height: auto;
   cursor: pointer;
-  transition: scale 0.8s ease;
-  -webkit-transition: scale 0.8s ease;
-  -moz-transition: scale 0.8s ease;
-  -ms-transition: scale 0.8s ease;
-  -o-transition: scale 0.8s ease;
+  transition: 0.8s ease;
+  -webkit-transition: 0.8s ease;
+  -moz-transition: 0.8s ease;
+  -ms-transition: 0.8s ease;
+  -o-transition: 0.8s ease;
   border-radius: 50%;
   border: 1px solid red;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
 }
 
 .event-card .logo-event-wrapper img:hover {
@@ -999,6 +997,15 @@ header.nav.active .burgerBtn-icon {
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
+}
+
+.event-card-inner.flip .front .logo-event-wrapper {
+  transition: 0.1s ease;
+  opacity: 0;
+  -webkit-transition: 0.1s ease;
+  -moz-transition: 0.1s ease;
+  -ms-transition: 0.1s ease;
+  -o-transition: 0.1s ease;
 }
 
 .event-card-inner .front,

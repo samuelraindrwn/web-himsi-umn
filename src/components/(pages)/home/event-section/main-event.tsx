@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Chevron from "@/components/(assets)/chevron";
 import XSymbol from "@/components/(assets)/x-symbol";
+import DescEvent from "./desc-event";
 
 export default function MainEvents() {
   const [events, setEvents] = useState([
@@ -10,7 +11,7 @@ export default function MainEvents() {
       eventName: "ISFEST",
       url: "",
       logo: "",
-      desc: "",
+      desc: "WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWW",
       isFlipped: false,
     },
     {
@@ -18,7 +19,7 @@ export default function MainEvents() {
       eventName: "PERPROD",
       url: "",
       logo: "",
-      desc: "",
+      desc: "WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWW WWW WWWWWWWWW WWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW awdwad",
       isFlipped: false,
     },
     {
@@ -26,7 +27,7 @@ export default function MainEvents() {
       eventName: "DISCO",
       url: "/img/compile.png",
       logo: "/img/logo-disco.png",
-      desc: "",
+      desc: "AAAAAAAAAAAAAAAAAAAAAAAA ADWDAi iwjdpajd idjawondow fwjf0wnwi 0fwifjpakwdaw wojfpawnfpoaw wodkpawndpoawdwpaj w0fkpawfpoawj a w0da[wd0jwndw owjfbfianf aiwjfafijawnf ndow fwjf0ndow fwjf0 doaowjdpoawj pwkafnw wfkawkfpwja wa0fwwondapjda pjeoqi0hqn1u28ei1 02je1bubwduh 93u9hjd 0heind 0`hjnda wjowbiuiabf ejoiqj2ejq Dengan perbaikan ini, deskripsi akan dipotong dengan benar dan ditampilkan sesuai kebutuhan. Semoga ini membantu! Jika Anda memiliki pertanyaan lain, jangan ragu untuk bertanya. wadawd wadawdawf aowkpao wad dpoawj pwkafnw wfkawkfpwja wa0fwwondapjda pjeoqi0hqn1u28ei1 02je1bubwduh 93u9hjd 0heind 0`hjnda wjowbiuiabf ejoiqj2ejq Dengan perbaikan ini, deskripsi akan dipotong dengan",
       isFlipped: false,
     },
     {
@@ -121,22 +122,7 @@ export default function MainEvents() {
               <span title="Close" onClick={() => handleFlippedClick(index)}>
                 <XSymbol />
               </span>
-              <div className="desc-event">
-                <h1>{event.eventName}</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
-                  consequatur recusandae veniam officia, quam ducimus debitis ut
-                  adipisci, architecto nulla nam atque natus, aut dolor.
-                  Loremipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptas iste, totam amet tenetur, dolorem quidem voluptatum
-                  neque esse suscipit perferendis veniam reprehenderit! Ipsum,
-                  sequi sed. Lorem ipsum, dolor sit amet consectetur adipisicing
-                  elit. Placeat molestiae accusantium quas error quam non velit,
-                  deleniti fugiat eum reprehenderit dolore facere earum
-                  temporibus doloribus consectetur iure possimus, veritatis hic.
-                </p>
-                <a>See More Details &rarr;</a>
-              </div>
+              <DescEvent event={event} />
             </div>
           </div>
         </div>

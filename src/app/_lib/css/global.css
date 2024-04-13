@@ -849,7 +849,7 @@ header.nav.active .burgerBtn-icon {
 
 #event {
   border: 1px solid red;
-  height: 100vh;
+  height: auto;
   padding-top: 0px;
 }
 
@@ -868,6 +868,7 @@ header.nav.active .burgerBtn-icon {
   border: 1px solid blue;
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -878,6 +879,8 @@ header.nav.active .burgerBtn-icon {
 .event-card {
   flex: 1;
   height: 100%;
+  /* width: 368px;
+  height: 500px; */
   perspective: 1000px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -990,6 +993,10 @@ header.nav.active .burgerBtn-icon {
 
 .event-card-inner.flip {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
 }
 
 .event-card-inner .front,
@@ -1009,7 +1016,6 @@ header.nav.active .burgerBtn-icon {
 
 .event-card-inner .back {
   background-color: transparent;
-  /* color: white; */
   transform: rotateY(180deg);
   padding: 30px;
 }
@@ -1018,13 +1024,24 @@ header.nav.active .burgerBtn-icon {
   flex-direction: column;
   gap: 30px;
 }
+
 .event-card-inner .back .desc-event p {
+  height: 293px;
   margin-top: -15px;
   margin-bottom: 15px;
+  word-wrap: break-word;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  -webkit-scrollbar-width: thin;
 }
+
 .event-card-inner .back .desc-event h1 {
+  text-transform: uppercase;
   font-size: 2.3rem;
   letter-spacing: 3px;
+  text-align: left;
+  overflow: hidden;
+  /* border: 1px solid red; */
 }
 .event-card-inner .back .xSymbol {
   width: 25px;

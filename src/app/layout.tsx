@@ -2,6 +2,7 @@ import "./_lib/css/global.css";
 import "./_lib/css/animation.css";
 import "./_lib/css/media-queries.css";
 import NavigationHeader from "@/components/templates/header";
+import Footer from "@/components/templates/footer";
 
 export const metadata = {
   title: { default: "HIMSI UMN", template: "HIMSI | %s" },
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body>
         <NavigationHeader />
         {children}
+        <Footer />
       </body>
     </html>
   );

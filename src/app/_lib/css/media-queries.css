@@ -109,6 +109,19 @@
   }
 }
 @media screen and (max-width: 1440px) {
+  #aspiration .right .text-wrapper h1 {
+    font-size: 2.5rem;
+  }
+  #aspiration .right .text-wrapper h2 {
+    font-size: 1.6rem;
+  }
+  #aspiration .right .text-wrapper p {
+    font-size: 1rem;
+  }
+  #aspiration .right .text-wrapper button {
+    font-size: 1rem;
+    width: 400px;
+  }
   #bimsi {
     margin-top: 0px;
   }
@@ -163,6 +176,12 @@
   }
 }
 @media screen and (max-width: 1024px) {
+  #aspiration .right {
+    width: 55%;
+  }
+  #aspiration .right .text-wrapper h2 {
+    font-size: 1.4rem;
+  }
   .event-card-inner .back .desc-event h1 {
     margin-top: 30px;
   }
@@ -288,6 +307,35 @@
   /* .event-container {
     height: 470px;
   } */
+  #aspiration {
+    flex-direction: column;
+    gap: 0px;
+  }
+  #aspiration .right {
+    padding-top: 0px;
+    width: 100%;
+  }
+
+  #aspiration .right .text-wrapper h2 {
+    border: 1px solid brown;
+    text-align: center;
+  }
+
+  #aspiration .right .text-wrapper p {
+    width: 100%;
+    text-align: center;
+    border: 1px solid blue;
+    padding: 0px;
+  }
+  #aspiration .right .text-wrapper {
+    align-items: center;
+  }
+  #aspiration .right .text-wrapper button {
+    margin: 0px;
+  }
+  #aspiration .left {
+    width: 60%;
+  }
   header.nav {
     padding: 20px 50px;
   }
@@ -600,6 +648,20 @@
 }
 
 @media screen and (max-width: 576px) {
+  #aspiration .right {
+    padding-inline: 5px;
+  }
+  #aspiration .right .text-wrapper h2 {
+    font-size: 1.2rem;
+  }
+  #aspiration .right .text-wrapper p {
+    font-size: 0.875rem;
+  }
+  #aspiration .right .text-wrapper button {
+    width: 300px;
+    font-size: 0.875rem;
+    /* padding-block: 20px; */
+  }
   .creation-container {
     padding-top: 30px;
   }
@@ -692,11 +754,17 @@
 }
 
 @media screen and (max-width: 426px) {
+  #aspiration .right .text-wrapper button {
+    width: 200px;
+    padding-inline: 0px;
+    padding-block: 15px;
+    font-size: 0.875rem;
+  }
   .event-container h1 {
     text-align: center;
   }
   .bimsi-wrapper h1 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     letter-spacing: 5px;
   }
   .bimsi-wrapper button {
@@ -765,6 +833,12 @@
 }
 
 @media screen and (max-width: 376px) {
+  #aspiration .right .text-wrapper h2 {
+    font-size: 1rem;
+  }
+  #aspiration .right .text-wrapper h1 {
+    font-size: 2rem;
+  }
   .bimsi-wrapper {
     height: auto;
   }
@@ -815,6 +889,15 @@
 }
 
 @media screen and (max-width: 321px) {
+  #aspiration .right .text-wrapper h1 {
+    font-size: 1.5rem;
+  }
+  #aspiration .right .text-wrapper h2 {
+    font-size: 0.775rem;
+  }
+  #aspiration .right .text-wrapper p {
+    font-size: 0.775rem;
+  }
   .event-card-inner .back .xSymbol {
     width: 20px;
     height: 20px;

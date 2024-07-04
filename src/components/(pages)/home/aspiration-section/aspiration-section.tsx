@@ -13,8 +13,8 @@ export default function AspirationSection() {
       <div className="right">
         <div className="text-wrapper">
           <h1>
-            <span>#Suarakan</span>
-            <span>Aspirasi</span>
+            <span className="font-clr-orange">#Suarakan</span>
+            <span className="font-clr-blue">Aspirasi</span>
           </h1>
           <h2>Together We Speak, Together We Thrive</h2>
           <p>
@@ -25,7 +25,15 @@ export default function AspirationSection() {
             collaborative environment where student feedback shapes the future
             of the program.
           </p>
-          <button className="btn-style-1">SUBMIT FORM</button>
+          <button
+            className="btn-style-1"
+            onClick={() => {
+              window.location.href =
+                "https://forms.office.com/Pages/ResponsePage.aspx?id=FfM3v8K6qESubC8hNR0mTHfocJHESkxIuz3QBc8bN6hUN1RKOVZHUTVSSktCNDhLV1ZBU1EzNE5TSS4u";
+            }}
+          >
+            SUBMIT FORM
+          </button>
         </div>
       </div>
     </section>

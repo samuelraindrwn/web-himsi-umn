@@ -22,78 +22,111 @@ export default function Footer() {
           height={1080}
           src={"/img/cloud-footer.png"}
         />
+
         <div className="top">
           <div className="left">
-            <h2>Contact Us</h2>
-            <ul>
-              <li>
-                <LocationIcon />
-                <p>
-                  Jalan Scientia Boulevard Gading, Curug Sangereng,
-                  <br /> Serpong, Kabupaten Tangerang, Banten 15810
-                </p>
-              </li>
-              <li>
-                <LineLogo />
-                <p>@886rxfyx</p>
-              </li>
-              <li>
-                <MailIcon />
-                <p>himsi@umn.ac.id</p>
-              </li>
-            </ul>
-          </div>
-          <div className="right">
             <h2>THANK YOU FOR VISITING OUR WEBSITE!</h2>
-            <ul>
-              <li>Home</li>|<li>About Us</li>|<li>Events</li>|<li>Services</li>|
-              <li>Terms and Condition</li>|<li>Terms of Service</li>|
-              <li>Privacy Policy</li>|<li>FAQ</li>|<li>Career Opportunities</li>
-              |<li>Blog</li>|<li>Support</li>
+            <ul className="nav-footer">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              |
+              <li>
+                <a href="/about">About Us</a>
+              </li>
+              |
+              <li>
+                <a href="/event">Events</a>
+              </li>
+              |
+              <li>
+                <a href="/himfact">HIMFACT</a>
+              </li>
+              |
+              <li>
+                <a href="/bimsi">BIMSI</a>
+              </li>
+              |
+              <li>
+                <a href="/aspiration">Aspiration</a>
+              </li>
             </ul>
             <h2>Follow Us</h2>
-            <ul>
+            <ul className="sosmed">
               <li>
                 <FacebookLogo />
-                Facebook
+                <a href="https://www.facebook.com/himsi.umn/"> Facebook</a>
               </li>
               <li>
                 <InstaLogo />
-                Instagram
+                <a href="https://www.instagram.com/umn_si/">Instagram</a>
               </li>
               <li>
                 <LinkedinLogo />
-                LinkedIn
+                <a href="https://www.linkedin.com/in/himsiumn14/">LinkedIn</a>
               </li>
             </ul>
           </div>
           <div className="mid">
-            <div className="powered">
-              <div className="powered-wrapper">
-                <h2>Powered By:</h2>
-                <div className="logo-wrapper">
-                  <Image
-                    alt="Logo UMN"
-                    width={45}
-                    height={90}
-                    src={"/img/umn-putih.webp"}
-                  />
-                  <Image
-                    alt="Logo IS"
-                    width={370}
-                    height={60}
-                    src={"/img/is-white.webp"}
-                    onClick={() => {
-                      window.location.href = "https://umn.ac.id";
-                    }}
-                  />
-                </div>
-                <p>
-                  Designed by{" "}
-                  <span className="web-designer">@samuelraindrwn</span>
-                </p>
+            <h2>Contact Us</h2>
+            <ul>
+              <li>
+                <LocationIcon />
+                <a href="https://maps.app.goo.gl/y248KY2KaYcB1Kgh8">
+                  Jalan Scientia Boulevard Gading, Curug Sangereng,
+                  <br /> Serpong, Kabupaten Tangerang, Banten 15810
+                </a>
+              </li>
+              <div className="contact-footer">
+                <li>
+                  <LineLogo />
+                  <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=886rxfyx">
+                    @886rxfyx
+                  </a>
+                </li>
+                <li>
+                  <MailIcon />
+                  <a href="mailto:himsi@umn.ac.id">himsi@umn.ac.id</a>
+                </li>
               </div>
+            </ul>
+          </div>
+
+          <div className="right">
+            {/* <h2>Powered By:</h2> */}
+            <div className="logo-wrapper">
+              <Image
+                alt="Logo UMN"
+                id="logo-umn-footer"
+                width={50}
+                height={90}
+                src={"/img/umn-putih.webp"}
+                onClick={() => {
+                  window.location.href = "https://umn.ac.id";
+                }}
+              />
+              <Image
+                alt="Logo IS"
+                id="logo-is-footer"
+                width={370}
+                height={60}
+                src={"/img/is-white.webp"}
+                onClick={() => {
+                  window.location.href = "https://si.umn.ac.id";
+                }}
+              />
             </div>
+            <p>
+              Designed & Developed by{" "}
+              <span
+                onClick={() => {
+                  window.location.href =
+                    "https://linkedin.com/in/samuelraindrwn";
+                }}
+              >
+                @samuelraindrwn
+              </span>
+            </p>
           </div>
         </div>
         <div className="bottom">

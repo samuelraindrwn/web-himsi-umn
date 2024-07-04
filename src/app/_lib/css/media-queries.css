@@ -33,6 +33,20 @@
 }
 
 @media screen and (min-width: 2000px) {
+  #aspiration .right .text-wrapper p {
+    font-size: 1.7rem;
+  }
+  #aspiration .right .text-wrapper h1 {
+    font-size: 5rem;
+  }
+  #aspiration .right .text-wrapper h2 {
+    font-size: 3rem;
+  }
+  #aspiration .right .text-wrapper button {
+    font-size: 1.7rem;
+    width: 700px;
+    padding-block: 30px;
+  }
   .event-card-inner .back .xSymbol {
     width: 35px;
     height: 35px;
@@ -176,6 +190,10 @@
   }
 }
 @media screen and (max-width: 1024px) {
+  #footer .cloud-footer {
+    height: 300px;
+    width: 1900px;
+  }
   #aspiration .right {
     width: 55%;
   }
@@ -304,9 +322,6 @@
 }
 
 @media screen and (max-width: 900px) {
-  /* .event-container {
-    height: 470px;
-  } */
   #aspiration {
     flex-direction: column;
     gap: 0px;
@@ -317,14 +332,12 @@
   }
 
   #aspiration .right .text-wrapper h2 {
-    border: 1px solid brown;
     text-align: center;
   }
 
   #aspiration .right .text-wrapper p {
     width: 100%;
     text-align: center;
-    border: 1px solid blue;
     padding: 0px;
   }
   #aspiration .right .text-wrapper {
@@ -495,6 +508,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  #footer .cloud-footer {
+    height: 200px;
+    width: 1000px;
+  }
   .event-container {
     height: auto;
   }
@@ -648,6 +665,13 @@
 }
 
 @media screen and (max-width: 576px) {
+  #footer .top .right .logo-wrapper #logo-is-footer {
+    width: 250px;
+    height: 50px;
+  }
+  #footer .top {
+    padding: 10px;
+  }
   #aspiration .right {
     padding-inline: 5px;
   }
@@ -660,7 +684,6 @@
   #aspiration .right .text-wrapper button {
     width: 300px;
     font-size: 0.875rem;
-    /* padding-block: 20px; */
   }
   .creation-container {
     padding-top: 30px;
@@ -754,6 +777,23 @@
 }
 
 @media screen and (max-width: 426px) {
+  .creation-container h1 {
+    padding-inline: 20px;
+  }
+  #footer {
+    margin-top: -50px;
+  }
+  #footer .top svg {
+    width: 20px;
+    height: 20px;
+  }
+  #footer .top li a {
+    font-size: 0.875rem;
+  }
+  #footer .top .left h2,
+  #footer .top .mid h2 {
+    font-size: 1rem;
+  }
   #aspiration .right .text-wrapper button {
     width: 200px;
     padding-inline: 0px;
@@ -889,6 +929,25 @@
 }
 
 @media screen and (max-width: 321px) {
+  #footer .top .mid .contact-footer {
+    gap: 15px;
+  }
+  #footer .top .right .logo-wrapper {
+    flex-direction: column;
+  }
+  #footer .top .right .logo-wrapper #logo-is-footer {
+    width: 170px;
+    height: 40px;
+  }
+
+  /* #footer .top .right .logo-wrapper #logo-umn-footer {
+    width: 30px;
+    height: 60px;
+  } */
+
+  #footer .top .right p {
+    font-size: 0.875rem;
+  }
   #aspiration .right .text-wrapper h1 {
     font-size: 1.5rem;
   }

@@ -63,9 +63,9 @@ export default function Navigation({
           About
         </Link>
         <Link
-          title="About"
+          title="Event"
           href={isHomePage ? "/#event" : "/event"}
-          style={getLinkStyle("about")}
+          style={getLinkStyle("event")}
           onClick={handleNavClick}
         >
           Events

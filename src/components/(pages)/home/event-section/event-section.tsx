@@ -5,10 +5,18 @@ export default function EventSection() {
     <section id="event">
       <div className="event-container">
         <h1>
-          <span>OUR MAIN</span> EVENTS
+          <span className="font-clr-orange">OUR MAIN</span>{" "}
+          <span className="font-clr-blue">EVENTS</span>
         </h1>
         <MainEvents />
-        <button className="btn-style-1">See More Events</button>
+        <button
+          className="btn-style-1"
+          onClick={() => {
+            window.location.href = "/event";
+          }}
+        >
+          See More Events
+        </button>
       </div>
     </section>
   );

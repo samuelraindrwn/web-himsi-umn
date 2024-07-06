@@ -845,17 +845,19 @@ header.nav.active .burgerBtn-icon {
 .event-wrapper {
   display: flex;
   width: 100%;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
-  height: 100%;
+  /* height: 100%; */
   padding: 30px 50px;
   gap: 30px;
+  border: 1px solid blue;
+  /* overflow: auto; */
 }
 
 .event-card {
-  flex: 1;
-  height: 100%;
+  width: 425px;
+  height: 600px;
   perspective: 1000px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -998,32 +1000,66 @@ header.nav.active .burgerBtn-icon {
 }
 
 .event-card-inner .back {
-  background-color: transparent;
   transform: rotateY(180deg);
+  background-image: url("/img/event-card-back-bg.jpg");
+  background-size: cover;
   padding: 30px;
+  position: relative;
 }
+
+.event-card-inner .back .back-event-bg {
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.dark-layer {
+  z-index: -1;
+  background-color: rgba(60, 60, 60, 0.735);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 .event-card-inner .back .desc-event {
   display: flex;
+  height: 100%;
   flex-direction: column;
   gap: 30px;
 }
 
 .event-card-inner .back .desc-event p {
-  height: 293px;
-  margin-top: -15px;
-  margin-bottom: 15px;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  height: calc(100%);
+  width: 100%;
   word-wrap: break-word;
   overflow-y: auto;
-  scrollbar-width: thin;
-  -webkit-scrollbar-width: thin;
+  padding: 10px;
+  line-height: 30px;
 }
 
 .event-card-inner .back .desc-event h1 {
+  color: var(--white);
   text-transform: uppercase;
-  font-size: 2.3rem;
+  font-size: 2rem;
   letter-spacing: 3px;
+  /* border: 1px solid red; */
   text-align: left;
-  overflow: hidden;
+  /* word-wrap: break-word; */
+  width: 100%;
+  /* overflow: hidden; */
 }
 .event-card-inner .back .xSymbol {
   width: 25px;

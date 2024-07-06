@@ -11,15 +11,15 @@ export default function MainEvents() {
       eventName: "ISFEST",
       url: "/img/compile-isfest.png",
       logo: "/img/logo-isfest.png",
-      desc: "WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWW",
+      desc: "",
       isFlipped: false,
     },
     {
       id: 1,
-      eventName: "PERPROD",
+      eventName: "prastavana",
       url: "/img/compile-perprod.png",
       logo: "/img/logo-perprod.png",
-      desc: "WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWW WWW WWWWWWWWW WWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWWWWWWWW awdwad",
+      desc: "",
       isFlipped: false,
     },
     {
@@ -27,12 +27,12 @@ export default function MainEvents() {
       eventName: "DISCO",
       url: "/img/compile.png",
       logo: "/img/logo-disco.png",
-      desc: "AAAAAAAAAAAAAAAAAAAAAAAA ADWDAi iwjdpajd idjawondow fwjf0wnwi 0fwifjpakwdaw wojfpawnfpoaw wodkpawndpoawdwpaj w0fkpawfpoawj a w0da[wd0jwndw owjfbfianf aiwjfafijawnf ndow fwjf0ndow fwjf0 doaowjdpoawj pwkafnw wfkawkfpwja wa0fwwondapjda pjeoqi0hqn1u28ei1 02je1bubwduh 93u9hjd 0heind 0`hjnda wjowbiuiabf ejoiqj2ejq Dengan perbaikan ini, deskripsi akan dipotong dengan benar dan ditampilkan sesuai kebutuhan. Semoga ini membantu! Jika Anda memiliki pertanyaan lain, jangan ragu untuk bertanya. wadawd wadawdawf aowkpao wad dpoawj pwkafnw wfkawkfpwja wa0fwwondapjda pjeoqi0hqn1u28ei1 02je1bubwduh 93u9hjd 0heind 0`hjnda wjowbiuiabf ejoiqj2ejq Dengan perbaikan ini, deskripsi akan dipotong dengan",
+      desc: "",
       isFlipped: false,
     },
     {
       id: 3,
-      eventName: "SIM",
+      eventName: "Social Is Me",
       url: "/img/compile-sim.png",
       logo: "/img/logo-sim.png",
       desc: "",
@@ -123,6 +123,14 @@ export default function MainEvents() {
                 <XSymbol />
               </span>
               <DescEvent event={event} />
+              <div className="dark-layer"></div>
+              <Image
+                className="back-event-bg"
+                alt=""
+                src={event.url}
+                height={100}
+                width={500}
+              />
             </div>
           </div>
         </div>

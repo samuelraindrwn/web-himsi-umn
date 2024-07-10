@@ -22,6 +22,8 @@ export default function HeroSectionAbout() {
     { id: 14, name: "Gen XIV", pict: "/img/gen14.webp" },
   ]);
 
+  console.log(gens);
+
   const filteredGens = gens.filter((gen) => gen.pict !== "");
   const genLength = filteredGens.length - 1;
   const [carouselIndex, setCarouselIndex] = useState(genLength);
@@ -31,7 +33,7 @@ export default function HeroSectionAbout() {
       setCarouselIndex((prevIndex) =>
         prevIndex === 0 ? genLength : prevIndex - 1
       );
-    }, 15000);
+    }, 7000);
 
     return () => clearInterval(interval);
   }, [genLength]);
@@ -40,13 +42,9 @@ export default function HeroSectionAbout() {
     <>
       <section className="heroAbout">
         {filteredGens.map((gen, index) => (
-          <Image
+          <div
             key={gen.id}
-            alt={gen.name}
-            src={gen.pict}
-            width={1980}
-            height={1980}
-            className={` ${
+            className={`heroAbout-wrapper ${
               index === carouselIndex
                 ? "active"
                 : index ===
@@ -54,12 +52,16 @@ export default function HeroSectionAbout() {
                 ? "next"
                 : ""
             }`}
-          />
+          >
+            <Image alt={gen.name} src={gen.pict} width={1980} height={1980} />
+            <div className="blue-layer">
+              <h1>{gen.name}</h1>
+              <div className="orange-layer">
+                <h2>HAO</h2>
+              </div>
+            </div>
+          </div>
         ))}
-        <h1>
-          EVERY FAMILY HAS A STORY <br />
-          WELCOME TO OURS!
-        </h1>
       </section>
     </>
   );

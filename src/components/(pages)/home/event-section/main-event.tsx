@@ -11,7 +11,7 @@ export default function MainEvents() {
       eventName: "ISFEST",
       url: "/img/compile-isfest.png",
       logo: "/img/logo-isfest.png",
-      desc: "",
+      desc: "Information System Festival (ISFEST) merupakan program kerja HIMSI dalam mendukung pengembangan akademik dan non-akademik yang dapat diikuti oleh seluruh mahasiswa dan pelajar dari seluruh Indonesia. ISFEST berisikan rangkaian kegiatan perlombaan di bidang akademik yang berhubungan dengan program studi Sistem Informasi dan perlombaan non-akademik dalam bidang E-Sports Rangkaian kegiatan ISFEST juga berisikan Talkshow dengan menghadirkan pembicara-pembiacara yang kompeten dalam bidang Sistem Informasi dengan isi materi yang dapat diterima oleh seluruh kalangan dari dalam memahami teknologi dari sisi Sistem Informasi.",
       isFlipped: false,
     },
     {
@@ -19,7 +19,7 @@ export default function MainEvents() {
       eventName: "prastavana",
       url: "/img/compile-perprod.png",
       logo: "/img/logo-perprod.png",
-      desc: "",
+      desc: "PRASTAVANA 2024, di bawah Himpunan Mahasiswa Sistem Informasi, bertujuan memperkenalkan Program Studi Sistem Informasi kepada mahasiswa baru dengan tema 𝚃𝚛𝚊𝚗𝚜𝚏𝚘𝚛𝚖𝚊𝚝𝚒𝚘𝚗 𝚃𝚘𝚠𝚊𝚛𝚍𝚜 𝚃𝚑𝚎 𝙵𝚞𝚝𝚞𝚛𝚎 dan tagline 𝑩𝒂𝒏𝒈𝒌𝒊𝒕𝒌𝒂𝒏 𝑲𝒓𝒆𝒂𝒕𝒊𝒗𝒊𝒕𝒂𝒔, 𝑪𝒊𝒑𝒕𝒂𝒌𝒂𝒏 𝑰𝒏𝒐𝒗𝒂𝒔𝒊. Tema ini mendorong mahasiswa baru untuk menghadapi tantangan perkuliahan dengan semangat dan pola pikir terbuka, mengenali potensi diri, serta merancang perjalanan akademik sesuai tujuan. Tagline tersebut mengajak mereka meningkatkan kreativitas dan inovasi, berpikir di luar batasan, menciptakan solusi baru, dan menjadi penggerak perubahan dalam lingkungan akademik yang mendorong eksperimen dan kolaborasi.",
       isFlipped: false,
     },
     {
@@ -27,7 +27,7 @@ export default function MainEvents() {
       eventName: "DISCO",
       url: "/img/compile.png",
       logo: "/img/logo-disco.png",
-      desc: "",
+      desc: "D’Information System Community Outbond (DISCO) merupakan program kerja tahunan Himpunan Sistem Informasi Universitas Multimedia Nusantara (HIMSI-UMN) dengan tujuan utama meningkatkan solidaritas dan keakraban seluruh Keluarga Besar Mahasiswa/i Sistem Informasi (KBM SI) yang terdiri atas dosen, alumni, serta mahasiswa/i aktif sistem informasi Universitas Multimedia Nusantara. DISCO pertama kali diselenggarakan pada tahun 2010 oleh HIMSI-UMN generasi pertama yang dahulu dikenal sebagai D’Information System Community. Program kerja ini dilanjutkan secara turun temurun oleh setiap generasi, menjadikan DISCO sebagai salah satu program kerja terlama yang telah diselenggarakan oleh HIMSI-UMN selama 11 tahun.",
       isFlipped: false,
     },
     {
@@ -35,7 +35,7 @@ export default function MainEvents() {
       eventName: "Social Is Me",
       url: "/img/compile-sim.png",
       logo: "/img/logo-sim.png",
-      desc: "",
+      desc: "Social Is Me (SIM) merupakan program kerja HIMSI UMN yang bergerak dalam pengabdian kepada masyarakat. SIM berisikan kegiatan aksi sosial dengan tujuan membantu masyarakat mencapai kesejahteraan dari sisi lingkungan alam ataupun sosial. Rangkaian kegiatan SIM dilakukan dengan pelaksanaan aksi langsung kepada masyarakat, baik melalui kerja nyata, maupun melalui penyuluhan sosial. Kegiatan SIM mengandalkan inisiatif dan kepedulian mahasiswa UMN dalam menciptakan lingkungan masyarakat Indonesia yang lebih sejahtera dan bersinergi.",
       isFlipped: false,
     },
   ]);

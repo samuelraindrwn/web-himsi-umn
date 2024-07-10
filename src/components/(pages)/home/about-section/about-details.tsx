@@ -1,6 +1,9 @@
 import Link from "next/link";
 
 export default function AboutDetails() {
+  function handleOnClick() {
+    window.location.href = "/about";
+  }
   return (
     <article className="right">
       <h1 id="tagline">
@@ -15,10 +18,10 @@ export default function AboutDetails() {
         leading us to remarkable achievements.
       </p>
       <div className="btn-wrapper">
-        <button className="btn-style-1">
+        <button className="btn-style-1" onClick={handleOnClick}>
           <Link href="/about">Explore Our Journey</Link>
         </button>
-        <button className="btn-style-1">
+        <button onClick={handleOnClick} className="btn-style-1">
           <Link href="/about">Check Our Events</Link>
         </button>
       </div>

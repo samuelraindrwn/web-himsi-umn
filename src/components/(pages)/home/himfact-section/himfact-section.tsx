@@ -6,8 +6,8 @@ export default function HimfactSection() {
     <section id="himfact">
       <div className="left">
         <h1>
-          <span className="font-clr-blue">HIM</span>
-          <span className="font-clr-orange">FACT</span>
+          <span className="font-clr-orange">SI</span>
+          <span className="font-clr-blue">BE</span>
         </h1>
         <h2>Student Elegance, Fashion Excellence: A Creative Fusion</h2>
         <p>

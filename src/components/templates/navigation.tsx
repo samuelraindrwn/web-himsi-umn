@@ -81,7 +81,7 @@ export default function Navigation({
             style={getLinkStyle("himfact")}
             onClick={handleNavClick}
           >
-            HIMFACT
+            SIBE
           </Link>
           <Link
             title="BIMSI"

@@ -20,7 +20,7 @@ export default function Footer() {
           alt="cloud"
           width={4320}
           height={1080}
-          src={"/img/cloud-footer.png"}
+          src={"/img/cloud-footer.webp"}
         />
 
         <div className="top">

@@ -124,6 +124,9 @@
 }
 
 @media screen and (max-width: 1560px) {
+  /* .heroAbout-wrapper .orange-layer {
+    padding-inline: 70px;
+  } */
   .event-card-inner .back .desc-event p {
     font-size: 0.95rem;
   }
@@ -208,6 +211,21 @@
 }
 
 @media screen and (max-width: 1256px) {
+  .titleGen h1 {
+    font-size: 4.5rem;
+  }
+  .heroAbout-wrapper .desc-wrapper .left {
+    padding-inline: 30px;
+  }
+  .heroAbout-wrapper .desc-wrapper .right button {
+    display: block;
+  }
+  .heroAbout-wrapper .desc-wrapper .right .cut-desc {
+    display: inline-block;
+  }
+  .heroAbout-wrapper .desc-wrapper .right .no-cut-desc {
+    display: none;
+  }
   .event-wrapper {
     gap: 15px;
     padding-inline: 30px;
@@ -313,6 +331,10 @@
 }
 
 @media screen and (max-width: 1346px) {
+  .heroAbout-wrapper .desc-wrapper .right {
+    padding: 50px;
+    width: 53%;
+  }
   .event-card-inner .back .desc-event p,
   .event-card-inner .back .desc-event a {
     font-size: 0.875rem;
@@ -420,7 +442,7 @@
     height: 700px;
   }
 
-  .carousel-ctrl {
+  .event-wrapper .carousel-ctrl {
     display: flex;
     width: fit-content;
     gap: 30px;
@@ -637,6 +659,17 @@
 }
 
 @media screen and (max-width: 768px) {
+  .titleGen h1 {
+    font-size: 3.7rem;
+  }
+  .titleGen p {
+    font-size: 1.3rem;
+  }
+
+  .heroAbout-wrapper .desc-wrapper .right h2 {
+    font-size: 2.3rem;
+  }
+
   #footer .cloud-footer {
     height: 200px;
     width: 1000px;

@@ -159,6 +159,12 @@ export default function HeroSectionAbout() {
                 </div>
               </div>
               <div className="right">
+                <div className="titleGen">
+                  <h1>{gen.name}</h1>
+                  <p>
+                    <span>({gen.year})</span> - {gen.tagline}
+                  </p>
+                </div>
                 <h2>Who are they?</h2>
                 <p className="no-cut-desc">{gen.desc}</p>
                 <p className="cut-desc">{truncateText(gen.desc, 30)}</p>

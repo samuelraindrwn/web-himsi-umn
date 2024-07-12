@@ -1525,6 +1525,10 @@ header.nav.active .burgerBtn-icon {
   box-shadow: 0px 0px 15px 0px var(--white);
 }
 
+.heroAbout-wrapper .desc-wrapper .right .titleGen {
+  display: none;
+}
+
 .whoAreWe {
   width: 100%;
   text-align: center;

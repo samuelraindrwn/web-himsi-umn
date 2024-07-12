@@ -677,6 +677,12 @@
 }
 
 @media screen and (max-width: 700px) {
+  .titleGen h1 {
+    font-size: 2.7rem;
+  }
+  .titleGen p {
+    font-size: 1.2rem;
+  }
   .bimsi-body {
     padding: 70px;
   }
@@ -752,6 +758,48 @@
 }
 
 @media screen and (max-width: 576px) {
+  .heroAbout-wrapper .desc-wrapper .right .cut-desc {
+    display: none;
+  }
+
+  .heroAbout-wrapper .desc-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heroAbout-wrapper .desc-wrapper .right {
+    height: 70%;
+    width: 100%;
+  }
+  .heroAbout-wrapper .desc-wrapper .right h2 {
+    display: none;
+  }
+
+  .heroAbout-wrapper .desc-wrapper .right .titleGen {
+    display: inline-block;
+    width: 100%;
+    padding: 0px;
+    height: auto;
+  }
+  .heroAbout-wrapper .desc-wrapper .right .titleGen h1 {
+    font-size: 3.2rem;
+  }
+
+  .heroAbout-wrapper .desc-wrapper .right .titleGen p {
+    font-size: 1.1rem;
+  }
+  .heroAbout-wrapper .desc-wrapper .right button {
+    font-size: 0.875rem;
+    padding: 15px;
+    margin-top: 0px;
+  }
+  .heroAbout-wrapper .desc-wrapper .left {
+    display: none;
+  }
+
+  .heroAbout {
+    min-height: 60vh;
+  }
   .event-container {
     height: 720px;
   }
@@ -871,6 +919,15 @@
 }
 
 @media screen and (max-width: 426px) {
+  .heroAbout-wrapper .desc-wrapper .right .titleGen h1 {
+    font-size: 3rem;
+  }
+
+  .heroAbout-wrapper .desc-wrapper .right .titleGen p {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+
   .event-container {
     height: 620px;
   }
@@ -980,6 +1037,17 @@
 }
 
 @media screen and (max-width: 376px) {
+  .heroAbout-wrapper .desc-wrapper .right .titleGen h1 {
+    font-size: 2rem;
+  }
+  .heroAbout-wrapper .desc-wrapper .right .titleGen p {
+    font-size: 0.875rem;
+  }
+  .heroAbout-wrapper .desc-wrapper .right button {
+    font-size: 0.675rem;
+    padding: 10px;
+    margin-top: 0px;
+  }
   #aspiration .right .text-wrapper h2 {
     font-size: 1rem;
   }
@@ -1036,6 +1104,17 @@
 }
 
 @media screen and (max-width: 321px) {
+  .heroAbout {
+    height: 75vh;
+  }
+  .heroAbout-wrapper .desc-wrapper .right .titleGen h1 {
+    font-size: 1.7rem;
+  }
+
+  .heroAbout-wrapper .desc-wrapper .right .titleGen p {
+    font-size: 0.775rem;
+  }
+
   #footer .top .mid .contact-footer {
     gap: 15px;
   }

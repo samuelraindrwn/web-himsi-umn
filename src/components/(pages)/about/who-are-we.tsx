@@ -43,12 +43,12 @@ export default function WhoAreWe() {
           and contributing to the overall academic and{" "}
           <b>professional environment</b> at UMN.
         </p>
-        {/* <Image
+        <Image
           alt="Logo Description"
           src={"/img/logo-details.png"}
           width={1920}
           height={1920}
-        /> */}
+        />
       </section>
     </>
   );

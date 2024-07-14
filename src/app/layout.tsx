@@ -27,6 +27,7 @@ export default function RootLayout({
       <body>
         <NavigationHeader />
         {children}
+        <SpeedInsights />
         <Footer />
       </body>
     </html>

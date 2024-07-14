@@ -3,6 +3,7 @@ import "./_lib/css/animation.css";
 import "./_lib/css/media-queries.css";
 import NavigationHeader from "@/components/templates/header";
 import Footer from "@/components/templates/footer";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: { default: "HIMSI UMN", template: "HIMSI | %s" },

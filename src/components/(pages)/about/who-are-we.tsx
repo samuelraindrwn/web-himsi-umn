@@ -11,8 +11,8 @@ export default function WhoAreWe() {
         <p className="long-desc">
           <b>
             <i>
-              "<span className="font-clr-blue">Himpunan Mahasiswa</span>{" "}
-              <span className="font-clr-orange">Sistem Informasi</span>"
+              &quot;<span className="font-clr-blue">Himpunan Mahasiswa</span>{" "}
+              <span className="font-clr-orange">Sistem Informasi</span> &quot;
             </i>
           </b>{" "}
           commonly abbreviated as <b>HIMSI</b>, is an Association of Information
@@ -20,8 +20,8 @@ export default function WhoAreWe() {
           Established with the mission to provide a comprehensive platform for{" "}
           <b>
             <i>
-              "Keluarga Besar Mahasiswa{" "}
-              <span className="font-clr-orange">Sistem Informasi</span>"
+              &quot;Keluarga Besar Mahasiswa{" "}
+              <span className="font-clr-orange">Sistem Informasi</span>&quot;
             </i>
           </b>{" "}
           (KBM SI), HIMSI aims to facilitate the <b>development and support</b>{" "}

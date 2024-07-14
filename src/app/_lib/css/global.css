@@ -1066,7 +1066,6 @@ header.nav.active .burgerBtn-icon {
 
 .event-card-inner .back {
   transform: rotateY(180deg);
-  background-image: url("/img/event-card-back-bg.jpg");
   background-size: cover;
   padding: 30px;
   position: relative;
@@ -1604,18 +1603,18 @@ header.nav.active .burgerBtn-icon {
 }
 
 .timeline .wrapper {
-  width: 100%;
+  width: 100vw;
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 50px;
-  padding-inline: 15%;
+  padding-inline: 15vw;
 }
 
 .timeline .wrapper .line {
   display: block;
   width: 7px;
-  height: calc(100% - 300px);
+  max-height: calc(100% - 300px);
   position: absolute;
   top: 0px;
   left: 50%;
@@ -1630,6 +1629,10 @@ header.nav.active .burgerBtn-icon {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   background-color: #c2c2c2;
+}
+
+.timeline .wrapper .line.gray {
+  min-height: calc(100% - 300px);
 }
 
 .timeline .wrapper .line.orange {
@@ -1752,7 +1755,8 @@ header.nav.active .burgerBtn-icon {
   color: var(--white);
   flex-direction: column;
   gap: 15px;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding: 10px;
 }
 
@@ -1760,6 +1764,7 @@ header.nav.active .burgerBtn-icon {
   text-transform: uppercase;
   font-size: 2rem;
   padding: 0px;
+  text-wrap: wrap;
 }
 
 .timeline-item .content p {

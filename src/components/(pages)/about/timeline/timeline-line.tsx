@@ -30,10 +30,6 @@ export default function TimelineLine({ gens, timelineRef }: TimelineProps) {
         let newHeight =
           scrollY - timelineRef.current.offsetTop + viewportHeight / 3;
 
-        const maxHeight = (gens.length - 1) * 350;
-
-        newHeight = Math.max(0, Math.min(newHeight, maxHeight));
-
         lineRef.current.style.height = `${newHeight}px`;
         localStorage.setItem("lineHeight", `${newHeight}`);
       }
@@ -47,7 +43,7 @@ export default function TimelineLine({ gens, timelineRef }: TimelineProps) {
   }, [gens]);
   return (
     <>
-      <span className="line"></span>
+      <span className="line gray"></span>
       <span className="line orange" ref={lineRef}></span>
     </>
   );

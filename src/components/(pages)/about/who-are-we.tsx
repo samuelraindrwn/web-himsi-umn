@@ -8,7 +8,7 @@ export default function WhoAreWe() {
           <span className="font-clr-blue">WHO ARE </span>{" "}
           <span className="font-clr-orange">WE?</span>
         </h1>
-        <p>
+        <p className="long-desc">
           <b>
             <i>
               "<span className="font-clr-blue">Himpunan Mahasiswa</span>{" "}
@@ -43,6 +43,23 @@ export default function WhoAreWe() {
           and contributing to the overall academic and{" "}
           <b>professional environment</b> at UMN.
         </p>
+        <p className="short-desc">
+          <b>
+            <i>
+              "<span className="font-clr-blue">Himpunan Mahasiswa</span>{" "}
+              <span className="font-clr-orange">Sistem Informasi</span>"
+            </i>
+          </b>{" "}
+          (HIMSI) is an Association of Information Systems Student at
+          Universitas Multimedia Nusantara (UMN) supports <i>KBM SI</i>. HIMSI
+          enhances <b className="font-clr-blue">academics</b>,{" "}
+          <b className="font-clr-orange">non-academics</b>, <b>skills</b>, and
+          fosters <b>community</b>. It organizes <b>events</b> and{" "}
+          <b>activities</b>, preparing students for{" "}
+          <b className="font-clr-blue">future careers</b>, and advocates for
+          their needs within UMN.
+        </p>
+
         <Image
           alt="Logo Description"
           src={"/img/logo-details.png"}

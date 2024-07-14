@@ -34,7 +34,7 @@ export default function Navigation({
   const getLinkStyle = (page: any) => {
     const style =
       isPageActive && !isActive && pathname === `/${page}`
-        ? { color: "var(--blue-himsi)" }
+        ? { color: "var(--blue-himsi)", fontWeight: "800" }
         : {};
     return style;
   };

@@ -46,8 +46,8 @@ export default function WhoAreWe() {
         <p className="short-desc">
           <b>
             <i>
-              `"`<span className="font-clr-blue">Himpunan Mahasiswa</span>{" "}
-              <span className="font-clr-orange">Sistem Informasi</span>`"`
+              &quot;<span className="font-clr-blue">Himpunan Mahasiswa</span>{" "}
+              <span className="font-clr-orange">Sistem Informasi</span>&quot;
             </i>
           </b>{" "}
           (HIMSI) is an Association of Information Systems Student at

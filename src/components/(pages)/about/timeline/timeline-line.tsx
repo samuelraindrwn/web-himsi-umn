@@ -11,7 +11,7 @@ interface Gen {
 
 interface TimelineProps {
   gens: Gen[];
-  timelineRef: RefObject<HTMLElement>;
+  timelineRef: any;
 }
 
 export default function TimelineLine({ gens, timelineRef }: TimelineProps) {

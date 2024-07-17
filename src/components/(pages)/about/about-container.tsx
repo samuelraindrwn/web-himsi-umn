@@ -4,6 +4,7 @@ import { useState } from "react";
 import HeroSectionAbout from "./hero-section";
 import WhoAreWe from "./who-are-we";
 import Timeline from "./timeline/timeline";
+import EventSection from "../home/event-section/event-section";
 
 export default function AboutContainer() {
   const [gens, setGens] = useState([

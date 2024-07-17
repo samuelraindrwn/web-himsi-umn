@@ -59,16 +59,19 @@ export default function TimelineItem({ gens }: TimelineProps) {
     };
   }, [gens]);
 
+  function handleOnClick(genName: any) {
+    window.location.href = "/about/" + genName.replace(/\s+/g, "");
+  }
+
   return (
     <>
       {gens.map((gen, index) => (
         <div
           key={gen.id}
           className={`timeline-item ${index % 2 === 0 ? "odd" : "even"}`}
+          onClick={() => handleOnClick(gen.name)}
         >
-          {/* <div className="content">
-            <h2>{gen.name}</h2>
-          </div> */}
+          <div className="seeMoreWrapper">Click To See More Story</div>
           <TimelineContent gens={gen} />
         </div>
       ))}
